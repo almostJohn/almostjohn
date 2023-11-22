@@ -8,8 +8,8 @@ import "../styles/globals.css";
 
 export const metadata: Metadata = {
 	title: {
-		default: "almostJohn",
-		template: "% | almostJohn",
+		default: "almostjohn",
+		template: "% | almostjohn",
 	},
 	viewport: {
 		minimumScale: 1,
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
 	return (
 		<html className={`${inter.variable} ${jetBrainsMono.variable}`} lang="en" suppressHydrationWarning>
-			<body className="bg-neutral-100 antialiased dark:bg-neutral-900 dark:text-neutral-200">
+			<body className="min-h-screen text-[0.9rem] bg-neutral-100 antialiased dark:bg-neutral-900 dark:text-neutral-100">
 				<Providers>
-					<div className="min-h-screen">{children}</div>
+					<div className="flex min-h-screen flex-col py-8">{children}</div>
 				</Providers>
 			</body>
 		</html>
