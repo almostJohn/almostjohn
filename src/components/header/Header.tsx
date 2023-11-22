@@ -11,8 +11,8 @@ export function Header() {
 						<span>software developer ▲</span>
 					</div>
 				</a>
-				<div className="flex items-center space-x-2 gap-4">
-					<div className="tooltip tooltip-bottom" data-tip="Email">
+				<div className="flex items-center space-x-2 gap-[10px]">
+					<button className="btn btn-ghost btn-sm">
 						<a
 							aria-label="Email"
 							href="mailto:garcia.johngale@gmail.com"
@@ -20,10 +20,10 @@ export function Header() {
 							target="_blank"
 							title="Email"
 						>
-							<Send />
+							<Send size="15px" />
 						</a>
-					</div>
-					<div className="tooltip tooltip-bottom" data-tip="GitHub">
+					</button>
+					<button className="btn btn-ghost btn-sm">
 						<a
 							aria-label="GitHub"
 							href="https://github.com/almostJohn"
@@ -31,10 +31,10 @@ export function Header() {
 							target="_blank"
 							title="GitHub"
 						>
-							<SiGithub />
+							<SiGithub size="15px" />
 						</a>
-					</div>
-					<div className="tooltip tooltip-bottom" data-tip="Twitter">
+					</button>
+					<button className="btn btn-ghost btn-sm">
 						<a
 							aria-label="Twitter"
 							href="https://twitter.com/almostJohn1"
@@ -42,10 +42,10 @@ export function Header() {
 							target="_blank"
 							title="Twitter"
 						>
-							<SiX />
+							<SiX size="15px" />
 						</a>
-					</div>
-					<div className="tooltip tooltip-bottom" data-tip="Facebook">
+					</button>
+					<button className="btn btn-ghost btn-sm">
 						<a
 							aria-label="Facebook"
 							href="https://facebook.com/alsojohn01"
@@ -53,9 +53,9 @@ export function Header() {
 							target="_blank"
 							title="Twitter"
 						>
-							<SiFacebook />
+							<SiFacebook size="15px" />
 						</a>
-					</div>
+					</button>
 				</div>
 			</div>
 		</header>
