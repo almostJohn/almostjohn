@@ -1,85 +1,85 @@
-import {
-	SiDiscord as Discord,
-	SiGithub as GitHub,
-	SiTwitter as Twitter,
-	SiInstagram as Instagram,
-	SiFacebook as Facebook,
-} from "@icons-pack/react-simple-icons";
-import { Send } from "lucide-react";
-import { Lanyard } from "@/components/lanyard/Lanyard";
+import { buttonVariants } from "@/util/cva";
+import { SiTwitter as Twitter, SiGithub as GitHub, SiFacebook as Facebook } from "@icons-pack/react-simple-icons";
 
 export default function Page() {
 	return (
-		<div className="min-h-screen">
-			<div className="mx-auto max-w-2xl min-h-screen flex flex-col place-content-center px-8 py-16 lg:px-6 lg:py-0">
-				<main>
-					<section>
-						<h1 className="text-6xl font-bold leading-tight">
-							Hey, I&apos;m <span className="text-sky-500">John</span>!
-						</h1>
-						<h2 className="text-2xl font-light">Software Developer</h2>
-					</section>
-					<Lanyard />
-				</main>
-				<footer>
-					<nav className="mt-12 flex gap-4">
+		<div className="mx-auto max-w-2xl place-content-center flex min-h-screen flex-col py-8">
+			<header className="container">
+				<div className="flex items-center justify-between py-4">
+					<a className="flex items-center space-x-2" href="/">
+						<div className="flex flex-col space-y-1 text-sm leading-none">
+							<span className="text-lg font-bold">almostjohn</span>
+							<span>software developer ▲</span>
+						</div>
+					</a>
+					<div className="flex items-center space-x-2">
 						<a
-							aria-label="Email"
-							href="mailto:garcia.johngale@gmail.com"
-							rel="external noopener noreferrer"
-							target="_blank"
-							title="Email"
-						>
-							<Send aria-hidden />
-						</a>
-						<a
-							aria-label="GitHub"
-							href="https://github.com/almostJohn"
-							rel="external noopener noreferrer"
-							target="_blank"
-							title="GitHub"
-						>
-							<GitHub aria-hidden />
-						</a>
-						<a
-							aria-label="Discord"
-							href="https://discord.com/users/996354867708841984"
-							rel="external noopener noreferrer"
-							target="_blank"
-							title="Discord"
-						>
-							<Discord aria-hidden />
-						</a>
-						<a
-							aria-label="Twitter"
 							href="https://twitter.com/almostJohn1"
-							rel="external noopener noreferrer"
 							target="_blank"
-							title="Twitter"
+							rel="noreferrer"
+							className={buttonVariants({ variant: "primary" })}
 						>
-							<Twitter aria-hidden />
+							<Twitter />
 						</a>
 						<a
-							aria-label="Instagram"
-							href="https://instagram.com/almostjohn1"
-							rel="external noopener noreferrer"
+							href="https://github.com/almostJohn"
 							target="_blank"
-							title="Instagram"
+							rel="noreferrer"
+							className={buttonVariants({ variant: "primary" })}
 						>
-							<Instagram aria-hidden />
+							<GitHub />
 						</a>
 						<a
-							aria-label="Facebook"
 							href="https://facebook.com/alsojohn01"
-							rel="external noopener noreferrer"
 							target="_blank"
-							title="Facebook"
+							rel="noreferrer"
+							className={buttonVariants({ variant: "primary" })}
 						>
-							<Facebook aria-hidden />
+							<Facebook />
 						</a>
-					</nav>
-				</footer>
-			</div>
+					</div>
+				</div>
+			</header>
+			<main className="flex-1">
+				<div className="container flex flex-col space-y-2">
+					<article className="pt-6">
+						<div className="space-y-1">
+							<h2 className="font-mono text-lg tracking-tighter">projects</h2>
+						</div>
+						<ul className="space-y-4 py-4">
+							<li>
+								<a className="flex flex-col space-y-1.5 !no-underline" href="https://djs-framework.vercel.app">
+									<div>
+										<span className="font-medium underline underline-offset-4">djs-framework</span>
+									</div>
+									<span className="text-muted-foreground">the next generation tool to build Discord bots.</span>
+								</a>
+							</li>
+							<li>
+								<a className="flex flex-col space-y-1.5 !no-underline" href="https://todoappgg.vercel.app/">
+									<div>
+										<span className="font-medium underline underline-offset-4">todoapp</span>
+									</div>
+									<span className="text-muted-foreground">
+										beautifully created with Next.js, DaisyUI, and TailwindCSS.
+									</span>
+								</a>
+							</li>
+							<li>
+								<a className="flex flex-col space-y-1.5 !no-underline" href="https://github.com/almostJohn/tatsumaki">
+									<div>
+										<span className="font-medium underline underline-offset-4">tatsumaki</span>
+										<span className="ml-2 rounded-lg px-2 py-0.5 font-mono text-xs no-underline bg-primary text-primary-foreground">
+											Development
+										</span>
+									</div>
+									<span className="text-muted-foreground">private Discord bot used to moderate a Discord server.</span>
+								</a>
+							</li>
+						</ul>
+					</article>
+				</div>
+			</main>
 		</div>
 	);
 }
