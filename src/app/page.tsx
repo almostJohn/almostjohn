@@ -1,5 +1,6 @@
 import { buttonVariants } from "@/util/cva";
-import { SiTwitter as Twitter, SiGithub as GitHub, SiFacebook as Facebook } from "@icons-pack/react-simple-icons";
+import { SiTwitter as Twitter, SiGithub as GitHub } from "@icons-pack/react-simple-icons";
+import { ModeToggle } from "@/components/ui/mode-toggle";
 
 export default function Page() {
 	return (
@@ -29,14 +30,7 @@ export default function Page() {
 						>
 							<GitHub />
 						</a>
-						<a
-							href="https://facebook.com/alsojohn01"
-							target="_blank"
-							rel="noreferrer"
-							className={buttonVariants({ variant: "primary" })}
-						>
-							<Facebook />
-						</a>
+						<ModeToggle />
 					</div>
 				</div>
 			</header>
