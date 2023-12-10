@@ -1,3 +1,5 @@
-### Hey, I'm [John](https://almostjohn.vercel.app)
+### introduction
 
-Really just some dude that codes and plonks on guitars...
+- rainenthusiast and overthinker
+- sometimes I write code; sometimes it works _(predominantly typescript, learning some rust)_
+- plonking on various numbers of strings _(mostly six)_ with the goal to produce pleasant sounds
