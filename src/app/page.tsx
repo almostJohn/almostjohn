@@ -1,4 +1,4 @@
-import { buttonVariants } from "@/util/cva";
+import { buttonVariants } from "@/components/ui/button";
 import { SiTwitter as Twitter, SiGithub as GitHub } from "@icons-pack/react-simple-icons";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 
@@ -18,7 +18,7 @@ export default function Page() {
 							href="https://twitter.com/almostJohn1"
 							target="_blank"
 							rel="noreferrer"
-							className={buttonVariants({ variant: "primary" })}
+							className={buttonVariants({ variant: "default" })}
 						>
 							<Twitter />
 						</a>
@@ -26,7 +26,7 @@ export default function Page() {
 							href="https://github.com/almostJohn"
 							target="_blank"
 							rel="noreferrer"
-							className={buttonVariants({ variant: "primary" })}
+							className={buttonVariants({ variant: "default" })}
 						>
 							<GitHub />
 						</a>
@@ -46,7 +46,7 @@ export default function Page() {
 									<div>
 										<span className="font-medium underline underline-offset-4">djs-framework</span>
 									</div>
-									<span className="text-muted-foreground">the next generation tool to build Discord bots.</span>
+									<span className="text-muted-foreground">the next generation tool to build discord bots.</span>
 								</a>
 							</li>
 							<li>
@@ -55,7 +55,7 @@ export default function Page() {
 										<span className="font-medium underline underline-offset-4">todoapp</span>
 									</div>
 									<span className="text-muted-foreground">
-										beautifully created with Next.js, DaisyUI, and TailwindCSS.
+										beautifully created with next.js, daisyui, and tailwindcss.
 									</span>
 								</a>
 							</li>
@@ -67,7 +67,7 @@ export default function Page() {
 											Development
 										</span>
 									</div>
-									<span className="text-muted-foreground">private Discord bot used to moderate a Discord server.</span>
+									<span className="text-muted-foreground">private discord bot used to moderate a discord server.</span>
 								</a>
 							</li>
 						</ul>
