@@ -54,9 +54,7 @@ export default function Page() {
 									<div>
 										<span className="font-medium underline underline-offset-4">todoapp</span>
 									</div>
-									<span className="text-muted-foreground">
-										beautifully created with next.js, daisyui, and tailwindcss.
-									</span>
+									<span className="text-muted-foreground">beautifully created with next.js and shadcn/ui.</span>
 								</a>
 							</li>
 							<li>
@@ -68,6 +66,17 @@ export default function Page() {
 										</span>
 									</div>
 									<span className="text-muted-foreground">private discord bot used to moderate a discord server.</span>
+								</a>
+							</li>
+							<li>
+								<a className="flex flex-col space-y-1.5 !no-underline" href="https://github.com/almostJohn/anony">
+									<div>
+										<span className="font-medium underline underline-offset-4">anony</span>
+										<span className="ml-2 rounded-lg px-2 py-0.5 font-mono text-xs no-underline bg-primary text-primary-foreground">
+											Private
+										</span>
+									</div>
+									<span className="text-muted-foreground">a confession discord bot.</span>
 								</a>
 							</li>
 						</ul>
