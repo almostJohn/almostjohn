@@ -1,6 +1,7 @@
 "use client";
 
 import { useForm, ValidationError } from "@formspree/react";
+import { Check } from "lucide-react";
 import { Card, CardBody } from "./ui/card-ui";
 import { cn } from "~/util/cn";
 
@@ -9,8 +10,9 @@ export function Contact() {
 
 	if (state.succeeded) {
 		return (
-			<div role="alert" className="alert alert-success">
-				<span>Thank you, your message has successfully sent.</span>
+			<div role="alert" className="alert alert-success text-white flex flex-row">
+				<Check />
+				<span>Message Sent.</span>
 			</div>
 		);
 	}
