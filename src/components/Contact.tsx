@@ -17,7 +17,7 @@ export function Contact() {
 
 	return (
 		<Card className="lg:card-side mt-6">
-			<CardBody className="bg-neutral-200 dark:bg-lightDark rounded-box">
+			<CardBody>
 				<form onSubmit={handleSubmit}>
 					<div>
 						<div className="flex flex-col justify-center">
@@ -47,7 +47,7 @@ export function Contact() {
 							type="submit"
 							disabled={state.submitting}
 							className={cn(
-								"btn rounded border-0 bg-blurple hover:bg-lightBlurple text-white dark:bg-lightDark dark:hover:bg-neutral-700 transition-colors",
+								"btn rounded border-0 w-full bg-blurple hover:bg-lightBlurple text-white dark:bg-lightDark dark:hover:bg-neutral-700 transition-colors",
 							)}
 						>
 							Send Message
