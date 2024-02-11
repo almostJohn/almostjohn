@@ -1,12 +1,13 @@
-import { Container } from "@/components/ui/container";
-import { Header } from "@/components/Header";
-import { Contents } from "@/components/Contents";
+import { NavigationBar } from "~/components/NavigationBar";
+import { Hero } from "~/components/Hero";
+import { Footer } from "~/components/Footer";
 
 export default function Page() {
 	return (
-		<Container>
-			<Header />
-			<Contents />
-		</Container>
+		<div className="max-w-5xl flex flex-col mx-auto min-h-screen p-4">
+			<NavigationBar />
+			<Hero />
+			<Footer />
+		</div>
 	);
 }

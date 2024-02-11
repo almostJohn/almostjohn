@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import type { PropsWithChildren } from "react";
 import { Providers } from "./providers";
-import { inter, jetBrainsMono } from "@/util/fonts";
+import { inter, jetBrainsMono } from "~/util/fonts";
 
 import "../styles/custom.css";
 import "../styles/globals.css";
 
 export const metadata = {
 	title: {
-		default: "almostjohn",
-		template: "% | almostjohn",
+		default: "almostJohn",
+		template: "% | almostJohn",
 	},
 	icons: {
 		other: [
@@ -30,7 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
 	return (
 		<html className={`${inter.variable} ${jetBrainsMono.variable}`} lang="en" suppressHydrationWarning>
-			<body className="min-h-screen bg-background antialiased">
+			<body className="antialiased bg-white text-black dark:bg-dark dark:text-white">
 				<Providers>{children}</Providers>
 			</body>
 		</html>
