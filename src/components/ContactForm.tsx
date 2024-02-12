@@ -5,7 +5,7 @@ import { Check } from "lucide-react";
 import { Card, CardBody } from "./ui/card-ui";
 import { cn } from "~/util/cn";
 
-export function Contact() {
+export function ContactForm() {
 	const [state, handleSubmit] = useForm("mrgnqzbo");
 
 	if (state.succeeded) {
@@ -19,7 +19,7 @@ export function Contact() {
 
 	return (
 		<Card className="lg:card-side mt-6">
-			<CardBody>
+			<CardBody className="p-5 rounded bg-neutral-200 dark:bg-lightDark">
 				<form onSubmit={handleSubmit}>
 					<div>
 						<div className="flex flex-col justify-center">
@@ -31,12 +31,12 @@ export function Contact() {
 								type="email"
 								name="email"
 								placeholder="Your email"
-								className="input input-bordered mt-4 w-full bg-white dark:bg-dark"
+								className="input input-bordered rounded mt-4 w-full bg-white dark:bg-dark"
 							/>
 							<ValidationError prefix="Email" field="email" errors={state.errors} />
 							<h1 className="text-xl font-bold leading-tight mt-3">Message</h1>
 							<textarea
-								className="textarea textarea-bordered w-full mt-3 bg-white dark:bg-dark"
+								className="textarea textarea-bordered rounded w-full mt-3 bg-white dark:bg-dark"
 								placeholder="Your message"
 								id="message"
 								name="message"
@@ -44,12 +44,12 @@ export function Contact() {
 							<ValidationError prefix="Message" field="message" errors={state.errors} />
 						</div>
 					</div>
-					<div className="mt-4 flex justify-start">
+					<div className="mt-4 flex">
 						<button
 							type="submit"
 							disabled={state.submitting}
 							className={cn(
-								"btn rounded border-0 w-full bg-blurple hover:bg-lightBlurple text-white dark:bg-lightDark dark:hover:bg-neutral-700 transition-colors",
+								"btn rounded border-0 w-full bg-blurple hover:bg-lightBlurple text-white dark:bg-neutral-700 dark:hover:bg-neutral-600 transition-colors",
 							)}
 						>
 							Send Message

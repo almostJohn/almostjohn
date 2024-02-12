@@ -10,10 +10,11 @@ export function Hero() {
 						<h1 className="text-6xl font-bold leading-tight">
 							Hey, I&apos;m <span className="text-blurple">John</span>!
 						</h1>
-						<p className="py-4 prose text-black dark:text-white">
-							I am a 23-year-old <span className="font-bold underline underline-offset-4">software developer</span> and
-							a <span className="font-bold underline underline-offset-4">discord bot developer</span> from the
-							Philippines with a passion for completing my studies and pursuing my career.
+						<p className="py-4 text-lg font-[400] prose text-black dark:text-white">
+							I am a 23-year-old <span className="font-bold text-blurple">software developer</span> and a{" "}
+							<span className="font-bold text-blurple">discord bot developer</span> from the Philippines with a passion
+							for completing my studies and pursuing my career. Get in touch with me via my socials below or check out
+							my portfolio.
 						</p>
 						<div className="flex flex-row gap-4">
 							<Link

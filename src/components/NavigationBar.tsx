@@ -1,9 +1,8 @@
 import { Navbar, NavbarStart, NavbarCenter, NavbarEnd } from "./ui/navbar-ui";
-import { SiGithub as GitHub } from "@icons-pack/react-simple-icons";
 import { MenuIcon } from "lucide-react";
 import Link from "next/link";
-import { website } from "~/config/website";
 import { cn } from "~/util/cn";
+import { Lanyard } from "./lanyard/Lanyard";
 
 export function NavigationBar() {
 	return (
@@ -54,14 +53,7 @@ export function NavigationBar() {
 				</ul>
 			</NavbarCenter>
 			<NavbarEnd>
-				<Link
-					href={website.social.github}
-					className={cn(
-						"btn rounded border-0 bg-white hover:bg-neutral-200 text-black dark:text-white dark:bg-dark dark:hover:bg-lightDark transition-colors",
-					)}
-				>
-					<GitHub />
-				</Link>
+				<Lanyard />
 			</NavbarEnd>
 		</Navbar>
 	);

@@ -9,12 +9,12 @@ export default function Page() {
 			<div className="flex flex-col justify-center p-4">
 				<h1 className="text-6xl font-bold leading-tight">Portfolio</h1>
 				<p className="py-4">
-					Take a look at some of my projects, I&apos;ve worked on, frameworks, websites that I&apos;ve made.
+					Take a look at some of my projects, I&apos;ve worked on, frameworks and websites that I&apos;ve made.
 				</p>
 				<div className="flex flex-col space-y-2">
 					<article className="pt-6">
 						<div className="space-y-1">
-							<h2 className="text-lg tracking-tighter">Projects</h2>
+							<h2 className="text-2xl tracking-tighter">Projects</h2>
 						</div>
 						<ul className="space-y-4 py-4">
 							<li>

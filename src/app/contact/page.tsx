@@ -1,6 +1,6 @@
 import { NavigationBar } from "~/components/NavigationBar";
 import { Footer } from "~/components/Footer";
-import { Contact } from "~/components/Contact";
+import { ContactForm } from "~/components/ContactForm";
 
 export default function Page() {
 	return (
@@ -11,7 +11,7 @@ export default function Page() {
 				<p className="py-4">
 					Want to discuss a project, an idea, an opportunity? Just fill out this form or write me an email.
 				</p>
-				<Contact />
+				<ContactForm />
 			</div>
 			<Footer />
 		</div>

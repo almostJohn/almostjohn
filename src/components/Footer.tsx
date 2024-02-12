@@ -1,5 +1,6 @@
 import {
 	SiX as X,
+	SiGithub as GitHub,
 	SiInstagram as Instagram,
 	SiFacebook as Facebook,
 	SiDiscord as Discord,
@@ -20,6 +21,15 @@ export function Footer() {
 					title="Email"
 				>
 					<Send aria-hidden />
+				</Link>
+				<Link
+					aria-label="GitHub"
+					href={website.social.github}
+					rel="external noopener noreferrer"
+					target="_blank"
+					title="GitHub"
+				>
+					<GitHub aria-hidden />
 				</Link>
 				<Link
 					aria-label="Discord"
