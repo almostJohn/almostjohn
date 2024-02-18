@@ -1,6 +1,7 @@
 import { NavigationBar } from "~/components/NavigationBar";
 import { Footer } from "~/components/Footer";
 import Link from "next/link";
+import { cn } from "~/util/cn";
 
 export default function Page() {
 	return (
@@ -51,6 +52,21 @@ export default function Page() {
 							</li>
 						</ul>
 					</article>
+				</div>
+				<div className="m-10 flex flex-col space-y-8">
+					<div className="flex flex-col items-center space-y-2 text-center">
+						<h1 className="text-3xl font-bold text-black dark:text-white">Looking for my CV?</h1>
+						<div className="group relative block cursor-pointer">
+							<Link
+								href="/cv.pdf"
+								className={cn(
+									"btn rounded border-0 bg-blurple hover:bg-lightBlurple text-white dark:bg-lightDark dark:hover:bg-neutral-700 transition-colors",
+								)}
+							>
+								Curriculum Vitae
+							</Link>
+						</div>
+					</div>
 				</div>
 			</div>
 			<Footer />
