@@ -5,7 +5,7 @@ export const website = {
 		discord: "https://discord.com/users/996354867708841984",
 		twitter: "https://twitter.com/almostJohn1",
 		instagram: "https://instagram.com/almostjohn1",
-		facebook: "https://facebook.com.alsojohn01",
+		facebook: "https://facebook.com/alsojohn01",
 	},
 };
 
