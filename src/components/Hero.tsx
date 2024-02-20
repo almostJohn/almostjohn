@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SiNextdotjs as NextJS, SiReact as React } from "@icons-pack/react-simple-icons";
 import { cn } from "~/util/cn";
 
 export function Hero() {
@@ -11,11 +12,21 @@ export function Hero() {
 							Hey, I&apos;m <span className="text-sky-500">John</span>!
 						</h1>
 						<p className="py-4 text-lg font-light prose text-neutral-800 dark:text-neutral-300">
-							I am a 23 year old{" "}
-							<span className="font-bold text-neutral-900 dark:text-neutral-200">software developer</span> and a{" "}
-							<span className="font-bold text-neutral-900 dark:text-neutral-200">discord bot developer</span> from
-							Philippines with a passion for completing my studies and pursuing my career. Get in touch with me via my
-							socials below or check out my portfolio.
+							I am a 23-year-old frontend developer from the Philippines with a passion for using{" "}
+							<Link
+								href="https://nextjs.org"
+								className="border border-neutral-400 dark:border-neutral-700 bg-neutral-200 dark:bg-lightDark rounded p-1 text-sm inline-flex items-center leading-4 text-black dark:text-white no-underline"
+							>
+								<NextJS width={14} height={14} className="!mr-1" /> Next.js
+							</Link>
+							, an open-source web framework built with{" "}
+							<Link
+								href="https://react.dev"
+								className="border border-neutral-400 dark:border-neutral-700 bg-neutral-200 dark:bg-lightDark rounded p-1 text-sm inline-flex items-center leading-4 text-black dark:text-white no-underline"
+							>
+								<React width={14} height={14} className="!mr-1 text-cyan-600" /> React
+							</Link>
+							. Feel free to get in touch with me via my socials below or check out my portfolio.
 						</p>
 						<div className="flex flex-row gap-4">
 							<Link
