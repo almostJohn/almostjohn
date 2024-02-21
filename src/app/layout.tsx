@@ -14,14 +14,14 @@ export const metadata = {
 	icons: {
 		other: [
 			{
-				url: "/favicon.png",
+				url: "/favicon.jpg",
 				sizes: "32x32",
-				type: "image/png",
+				type: "image/jpeg",
 			},
 			{
-				url: "/favicon.png",
+				url: "/favicon.jpg",
 				sizes: "16x16",
-				type: "image/png",
+				type: "image/jpeg",
 			},
 		],
 	},
@@ -30,7 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
 	return (
 		<html className={`${inter.variable} ${jetBrainsMono.variable}`} lang="en" suppressHydrationWarning>
-			<body className="antialiased bg-white text-black dark:bg-dark dark:text-white">
+			<body className="bg-[#ffffff] dark:bg-[#000000] antialiased text-black dark:text-neutral-50">
 				<Providers>{children}</Providers>
 			</body>
 		</html>
