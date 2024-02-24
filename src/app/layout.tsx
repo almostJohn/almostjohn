@@ -7,10 +7,7 @@ import "../styles/custom.css";
 import "../styles/globals.css";
 
 export const metadata = {
-	title: {
-		default: "almostJohn",
-		template: "% | almostJohn",
-	},
+	title: "almostJohn",
 	icons: {
 		other: [
 			{
@@ -30,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
 	return (
 		<html className={`${inter.variable} ${jetBrainsMono.variable}`} lang="en" suppressHydrationWarning>
-			<body className="bg-[#ffffff] dark:bg-[#000000] antialiased text-black dark:text-neutral-50">
+			<body className="bg-background antialiased">
 				<Providers>{children}</Providers>
 			</body>
 		</html>

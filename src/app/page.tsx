@@ -1,13 +1,15 @@
-import { NavigationBar } from "~/components/NavigationBar";
-import { Hero } from "~/components/Hero";
+import { Footer } from "~/components/Footer";
+import { Header } from "~/components/Header";
+import { HeroSection } from "~/components/HeroSection";
 
 export default function Page() {
 	return (
-		<div className="max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
-			<main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-				<NavigationBar />
-				<Hero />
-			</main>
+		<div className="flex flex-col max-w-2xl min-h-screen m-auto py-8">
+			<Header />
+			<HeroSection />
+			<div className="pt-6">
+				<Footer />
+			</div>
 		</div>
 	);
 }
