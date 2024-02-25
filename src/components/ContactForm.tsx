@@ -22,27 +22,25 @@ export function ContactForm() {
 
 	return (
 		<div className="p-2">
-			<div className="p-5">
-				<form onSubmit={handleSubmit}>
-					<div>
-						<div className="flex flex-col justify-center">
-							<label className="text-xl font-bold leading-tight pb-3" htmlFor="email">
-								Email Address
-							</label>{" "}
-							<Input id="email" type="email" name="email" placeholder="Your email" />
-							<ValidationError prefix="Email" field="email" errors={state.errors} />
-							<label className="text-xl font-bold leading-tight mt-3 pb-3">Message</label>
-							<Textarea id="message" name="message" placeholder="Your message" />
-							<ValidationError prefix="Message" field="message" errors={state.errors} />
-						</div>
+			<form onSubmit={handleSubmit}>
+				<div>
+					<div className="flex flex-col justify-center">
+						<label className="text-xl font-bold leading-tight pb-3" htmlFor="email">
+							Email Address
+						</label>{" "}
+						<Input id="email" type="email" name="email" placeholder="Your email" />
+						<ValidationError prefix="Email" field="email" errors={state.errors} />
+						<label className="text-xl font-bold leading-tight mt-3 pb-3">Message</label>
+						<Textarea id="message" name="message" placeholder="Your message" />
+						<ValidationError prefix="Message" field="message" errors={state.errors} />
 					</div>
-					<div className="mt-5 flex">
-						<Button type="submit" disabled={state.submitting} variant="default" className="w-full">
-							Send Message
-						</Button>
-					</div>
-				</form>
-			</div>
+				</div>
+				<div className="mt-5 flex">
+					<Button type="submit" disabled={state.submitting} variant="default" className="w-full">
+						Send Message
+					</Button>
+				</div>
+			</form>
 		</div>
 	);
 }

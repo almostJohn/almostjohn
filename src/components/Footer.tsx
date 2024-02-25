@@ -1,5 +1,11 @@
-import { SiDiscord as Discord } from "@icons-pack/react-simple-icons";
-import { FacebookIcon, InstagramIcon, Send, TwitterIcon } from "lucide-react";
+import {
+	SiDiscord as Discord,
+	SiX as X,
+	SiGithub as GitHub,
+	SiInstagram as Instagram,
+	SiFacebook as Facebook,
+} from "@icons-pack/react-simple-icons";
+import { Send } from "lucide-react";
 import Link from "next/link";
 import { website } from "~/config/website";
 
@@ -10,17 +16,20 @@ export function Footer() {
 				<Link href={website.social.email}>
 					<Send aria-hidden />
 				</Link>
+				<Link href={website.social.github}>
+					<GitHub aria-hidden />
+				</Link>
 				<Link href={website.social.twitter}>
-					<TwitterIcon aria-hidden />
+					<X aria-hidden />
 				</Link>
 				<Link href={website.social.discord}>
 					<Discord aria-hidden />
 				</Link>
 				<Link href={website.social.instagram}>
-					<InstagramIcon aria-hidden />
+					<Instagram aria-hidden />
 				</Link>
 				<Link href={website.social.facebook}>
-					<FacebookIcon aria-hidden />
+					<Facebook aria-hidden />
 				</Link>
 			</nav>
 			<div className="flex items-center justify-start pt-3">

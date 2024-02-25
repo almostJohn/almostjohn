@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ModeToggle } from "./ModeToggle";
 
 export function Header() {
 	return (
@@ -25,6 +26,7 @@ export function Header() {
 							>
 								contact
 							</Link>
+							<ModeToggle />
 						</div>
 					</nav>
 				</div>

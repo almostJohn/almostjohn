@@ -3,7 +3,7 @@ export const website = {
 		email: "mailto:garcia.johngale@gmail.com",
 		github: "https://github.com/almostJohn",
 		discord: "https://discord.com/users/996354867708841984",
-		twitter: "https://twitter.com/almostJohn1",
+		twitter: "https://x.com/almostJohn1",
 		instagram: "https://instagram.com/almostjohn1",
 		facebook: "https://facebook.com/alsojohn01",
 	},
