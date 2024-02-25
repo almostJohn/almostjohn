@@ -27,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
 	return (
 		<html className={`${inter.variable} ${jetBrainsMono.variable}`} lang="en" suppressHydrationWarning>
-			<body className="bg-background antialiased">
+			<body className="min-h-screen bg-background antialiased">
 				<Providers>{children}</Providers>
 			</body>
 		</html>
