@@ -28,7 +28,7 @@ export default function Page() {
 											<div>
 												<span className="font-medium underline underline-offset-4">djs-framework</span>
 											</div>
-											<span className="text-muted-foreground">the next generation tool to build discord bots.</span>
+											<span className="text-muted-foreground">next generation tool to build discord bots.</span>
 										</Link>
 									</li>
 									<li>
@@ -44,9 +44,7 @@ export default function Page() {
 											<div>
 												<span className="font-medium underline underline-offset-4">anony</span>
 											</div>
-											<span className="text-muted-foreground">
-												the only confession discord bot you&apos;ll ever need.
-											</span>
+											<span className="text-muted-foreground">confession discord bot.</span>
 										</Link>
 									</li>
 								</ul>
