@@ -9,8 +9,8 @@ import "../styles/globals.css";
 
 export const metadata: Metadata = {
 	title: {
-		default: "almostjohn",
-		template: "% | almostjohn",
+		default: "almostJohn",
+		template: "%s - almostJohn",
 	},
 	icons: {
 		other: [
@@ -33,14 +33,12 @@ export default function GlobalError({ error }: { readonly error: Error }) {
 
 	return (
 		<html className={inter.variable} lang="en" suppressHydrationWarning>
-			<body className="antialiased bg-white text-black dark:bg-dark dark:text-white">
+			<body className="antialiased min-h-screen bg-background">
 				<Providers>
-					<main className="mx-auto max-w-2xl min-h-screen">
-						<div className="mx-auto max-w-lg min-h-screen flex flex-col place-content-center place-items-center gap-8 px-8 py-16 lg:px-6 lg:py-0">
-							<h1 className="text-[8rem] font-black leading-none md:text-[6rem]">500</h1>
-							<h2 className="text-[6rem] md:text-[3rem] text-center">Error.</h2>
-						</div>
-					</main>
+					<div className="container min-h-screen flex flex-col place-content-center place-items-center gap-8 px-8 py-16 lg:px-6 lg:py-0 mx-auto">
+						<h1 className="text-[8rem] font-black leading-none md:text-[6rem]">500</h1>
+						<h2 className="text-[6rem] md:text-[3rem] text-center">Error.</h2>
+					</div>
 				</Providers>
 			</body>
 		</html>
