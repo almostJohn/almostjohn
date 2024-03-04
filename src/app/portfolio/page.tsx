@@ -24,23 +24,7 @@ export default function Page() {
 										<div>
 											<span className="font-medium underline underline-offset-4">djs-framework</span>
 										</div>
-										<span className="text-muted-foreground">next generation tool to build discord bots.</span>
-									</Link>
-								</li>
-								<li>
-									<Link className="flex flex-col space-y-1.5 !no-underline" href="https://writenote.vercel.app">
-										<div>
-											<span className="font-medium underline underline-offset-4">writenote</span>
-										</div>
-										<span className="text-muted-foreground">beautifully designed using next.js and shadcn/ui.</span>
-									</Link>
-								</li>
-								<li>
-									<Link className="flex flex-col space-y-1.5 !no-underline" href="https://anony-bot.vercel.app">
-										<div>
-											<span className="font-medium underline underline-offset-4">anony</span>
-										</div>
-										<span className="text-muted-foreground">confession discord bot.</span>
+										<span className="text-muted-foreground">the next generation tool to build discord bots.</span>
 									</Link>
 								</li>
 							</ul>
