@@ -1,5 +1,6 @@
 "use client";
 
+import * as React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { Check } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "./ui/alert";

@@ -1,18 +1,18 @@
 import type { Metadata, Viewport } from "next";
 import type { PropsWithChildren } from "react";
 import { Providers } from "./providers";
-import { inter, jetBrainsMono } from "~/util/fonts";
-import { Header } from "~/components/Header";
-import { Footer } from "~/components/Footer";
+import { rubik } from "~/util/fonts";
+import { SiteHeader } from "~/components/site-header";
+import { SiteFooter } from "~/components/site-footer";
+import { Socials } from "~/components/socials";
+import { siteConfig } from "~/config/site";
+import { cn } from "~/lib/utils";
 
 import "../styles/custom.css";
 import "../styles/globals.css";
 
 export const metadata = {
-	title: {
-		default: "almostJohn",
-		template: "%s - almostJohn",
-	},
+	title: siteConfig.title,
 	icons: {
 		other: [
 			{
@@ -31,20 +31,23 @@ export const metadata = {
 
 export const viewport = {
 	themeColor: [
-		{ media: "(prefers-color-scheme: light)", color: "light" },
-		{ media: "(prefers-color-scheme: dark)", color: "dark" },
+		{ media: "(prefers-color-scheme: light)", color: "white" },
+		{ media: "(prefers-color-scheme: dark)", color: "black" },
 	],
 } satisfies Viewport;
 
 export default function RootLayout({ children }: PropsWithChildren) {
 	return (
-		<html className={`${inter.variable} ${jetBrainsMono.variable}`} lang="en" suppressHydrationWarning>
-			<body className="min-h-screen bg-background antialiased">
+		<html lang="en" suppressHydrationWarning>
+			<body className={cn("min-h-screen bg-background antialiased", rubik.className)}>
 				<Providers>
-					<div className="max-w-2xl flex flex-col min-h-screen mx-auto py-8">
-						<Header />
-						{children}
-						<Footer />
+					<div vaul-drawer-wrapper="">
+						<div className="relative max-w-2xl flex min-h-screen flex-col bg-background mx-auto">
+							<SiteHeader />
+							{children}
+							<Socials />
+							<SiteFooter />
+						</div>
 					</div>
 				</Providers>
 			</body>

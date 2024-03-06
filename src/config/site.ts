@@ -1,4 +1,8 @@
-export const website = {
+export const siteConfig = {
+	title: {
+		default: "almostJohn",
+		template: "%s - almostJohn",
+	},
 	social: {
 		email: "mailto:garcia.johngale@gmail.com",
 		github: "https://github.com/almostJohn",
@@ -9,4 +13,4 @@ export const website = {
 	},
 };
 
-export type Website = typeof website;
+export type Website = typeof siteConfig;
