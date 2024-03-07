@@ -10,12 +10,12 @@ export function HeroSection() {
 			<div className="flex container flex-col space-y-6 py-16">
 				<article className="pt-2">
 					<div className="space-y-3">
-						<h2 className="text-2xl tracking-tighter">hey, I&apos;m john 👋</h2>
-						<p className="prose prose-neutral dark:prose-invert space-y-3 text-muted-foreground text-balance">
+						<h1 className="text-3xl font-medium mb-8 leading-tight">hey, I&apos;m john 👋</h1>
+						<p className="text-muted-foreground prose">
 							I am a 23-year-old frontend developer from the Philippines with a passion in web development using{" "}
 							<Link
 								className={cn(
-									"border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 p-1 text-sm inline-flex items-center leading-4 text-neutral-900 dark:text-neutral-100 no-underline rounded",
+									"border bg-background p-1 text-sm inline-flex items-center leading-4 no-underline rounded text-black dark:text-white",
 								)}
 								href="https://nextjs.org"
 							>
@@ -24,7 +24,7 @@ export function HeroSection() {
 							, an open-source web framework built with{" "}
 							<Link
 								className={cn(
-									"border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 p-1 text-sm inline-flex items-center leading-4 text-neutral-900 dark:text-neutral-100 no-underline rounded",
+									"border bg-background p-1 text-sm inline-flex items-center leading-4 no-underline rounded text-black dark:text-white",
 								)}
 								href="https://react.dev"
 							>

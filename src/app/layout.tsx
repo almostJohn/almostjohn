@@ -4,7 +4,6 @@ import { Providers } from "./providers";
 import { rubik } from "~/util/fonts";
 import { SiteHeader } from "~/components/site-header";
 import { SiteFooter } from "~/components/site-footer";
-import { Socials } from "~/components/socials";
 import { siteConfig } from "~/config/site";
 import { cn } from "~/lib/utils";
 
@@ -42,10 +41,9 @@ export default function RootLayout({ children }: PropsWithChildren) {
 			<body className={cn("min-h-screen bg-background antialiased", rubik.className)}>
 				<Providers>
 					<div vaul-drawer-wrapper="">
-						<div className="relative max-w-2xl flex min-h-screen flex-col bg-background mx-auto">
+						<div className="relative max-w-3xl flex min-h-screen flex-col bg-background mx-auto">
 							<SiteHeader />
 							{children}
-							<Socials />
 							<SiteFooter />
 						</div>
 					</div>
