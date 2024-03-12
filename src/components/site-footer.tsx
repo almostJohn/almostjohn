@@ -66,7 +66,7 @@ export function SiteFooter() {
 			</nav>
 			<div className="text-center md:text-right">
 				<p className="text-[15px]/relaxed leading-loose text-muted-foreground">
-					Built by{" "}
+					&copy; 2023 - 2024{" "}
 					<Link
 						href={siteConfig.social.github}
 						rel="noreferrer"
@@ -75,7 +75,6 @@ export function SiteFooter() {
 					>
 						almostJohn
 					</Link>
-					.
 				</p>
 			</div>
 		</div>

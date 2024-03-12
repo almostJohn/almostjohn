@@ -11,9 +11,8 @@ export function HeroSection() {
 				<article className="pt-2">
 					<div className="space-y-3">
 						<h1 className="text-3xl mb-8 tracking-tighter">hey, I&apos;m john 👋</h1>
-						<p className="prose prose-neutral dark:prose-invert text-muted-foreground">
-							I am a 23-year-old frontend developer, and enthusiast photographer from the Philippines with a passion in
-							web development using{" "}
+						<p className="prose prose-neutral dark:prose-invert text-muted-foreground leading-normal">
+							I&apos;m a 23-year-old frontend developer from Philippines with a passion in web development using{" "}
 							<Link
 								className={cn(
 									"border bg-background p-1 text-sm inline-flex items-center leading-4 no-underline rounded text-black dark:text-white",
@@ -29,11 +28,11 @@ export function HeroSection() {
 								)}
 								href="https://react.dev"
 							>
-								<ReactIcon width={14} height={14} className="!mr-1 text-sky-400" /> React
+								<ReactIcon width={14} height={14} className="!mr-1 text-sky-500" /> React
 							</Link>
 							. Get in touch with me via my socials below or check out my portfolio.
 						</p>
-						<div className="flex flex-row items-start justify-start pt-4 pb-6 gap-2">
+						<div className="flex w-full items-center justify-start space-x-3 py-4 md:pb-10">
 							<Link href="/portfolio" className={cn(buttonVariants())}>
 								View Portfolio
 							</Link>

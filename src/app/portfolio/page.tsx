@@ -11,7 +11,7 @@ export default function Page() {
 			<div className="flex container flex-col space-y-6 py-16">
 				<h1 className="font-medium text-2xl mb-8 tracking-tighter">my portfolio</h1>
 				<div className="border-b border-border/40">
-					<p className="text-muted-foreground prose prose-neutral dark:prose-invert">
+					<p className="text-muted-foreground prose prose-neutral dark:prose-invert leading-normal">
 						Take a look at some of the projects I&apos;ve worked on, including frameworks and websites that I&apos;ve
 						created.
 					</p>
