@@ -12,7 +12,8 @@ export function HeroSection() {
 					<div className="space-y-3">
 						<h1 className="text-3xl mb-8 tracking-tighter">hey, I&apos;m john 👋</h1>
 						<p className="prose prose-neutral dark:prose-invert text-muted-foreground leading-normal">
-							I&apos;m a 23-year-old frontend developer from Philippines with a passion in web development using{" "}
+							I&apos;m a 23-year-old software developer from Philippines, I write about things in tech and web
+							development that make me optimistic for the future, where I use{" "}
 							<Link
 								className={cn(
 									"border bg-background p-1 text-sm inline-flex items-center leading-4 no-underline rounded text-black dark:text-white",
