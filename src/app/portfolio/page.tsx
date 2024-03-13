@@ -39,6 +39,14 @@ export default function Page() {
 										<span className="text-muted-foreground">discord confession bot.</span>
 									</Link>
 								</li>
+								<li>
+									<Link className="flex flex-col space-y-1.5 !no-underline" href="https://tasktrack-v0.vercel.app">
+										<div>
+											<span className="font-medium underline underline-offset-4">task-tracker</span>
+										</div>
+										<span className="text-muted-foreground">task now, delete later.</span>
+									</Link>
+								</li>
 							</ul>
 						</article>
 					</div>
