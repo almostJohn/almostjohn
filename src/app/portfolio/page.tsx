@@ -11,7 +11,7 @@ export default function Page() {
 			<div className="flex container flex-col space-y-6 py-16">
 				<h1 className="font-medium text-2xl mb-8 tracking-tighter">my portfolio</h1>
 				<div className="border-b border-border/40">
-					<p className="text-muted-foreground prose prose-neutral dark:prose-invert leading-normal">
+					<p className="text-muted-foreground prose prose-neutral dark:prose-invert">
 						Take a look at some of the projects I&apos;ve worked on, including frameworks and websites that I&apos;ve
 						created.
 					</p>
@@ -28,7 +28,7 @@ export default function Page() {
 										<div>
 											<span className="font-medium underline underline-offset-4">djs-framework</span>
 										</div>
-										<span className="text-muted-foreground">the next generation tool to build discord bots.</span>
+										<span className="text-muted-foreground">The next generation tool to build Discord Bots.</span>
 									</Link>
 								</li>
 								<li>
@@ -36,7 +36,9 @@ export default function Page() {
 										<div>
 											<span className="font-medium underline underline-offset-4">confessicat</span>
 										</div>
-										<span className="text-muted-foreground">discord confession bot.</span>
+										<span className="text-muted-foreground">
+											The only Confessions Discord Bot you&apos;ll ever need.
+										</span>
 									</Link>
 								</li>
 								<li>
@@ -44,7 +46,9 @@ export default function Page() {
 										<div>
 											<span className="font-medium underline underline-offset-4">task-tracker</span>
 										</div>
-										<span className="text-muted-foreground">task now, delete later.</span>
+										<span className="text-muted-foreground">
+											The website that creates you a Task that can be tracked anytime.
+										</span>
 									</Link>
 								</li>
 							</ul>

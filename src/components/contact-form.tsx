@@ -16,7 +16,7 @@ export function ContactForm() {
 			<Alert>
 				<Check className="h-4 w-4" />
 				<AlertTitle>Message Sent!</AlertTitle>
-				<AlertDescription>Thank you for your cooperation.</AlertDescription>
+				<AlertDescription>Thank you for signing up.</AlertDescription>
 			</Alert>
 		);
 	}

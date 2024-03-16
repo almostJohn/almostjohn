@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Providers } from "./providers";
 import { inter } from "~/util/fonts";
 
-import "../styles/custom.css";
+import "../styles/defaultStyle.css";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {

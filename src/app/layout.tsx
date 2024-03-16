@@ -1,14 +1,13 @@
 import * as React from "react";
 import type { Metadata, Viewport } from "next";
-import type { PropsWithChildren } from "react";
 import { Providers } from "./providers";
-import { rubik } from "~/util/fonts";
+import { inter, jetBrainsMono } from "~/util/fonts";
 import { SiteHeader } from "~/components/site-header";
 import { SiteFooter } from "~/components/site-footer";
 import { siteConfig } from "~/config/site";
 import { cn } from "~/lib/utils";
 
-import "../styles/custom.css";
+import "../styles/defaultStyle.css";
 import "../styles/globals.css";
 
 export const metadata = {
@@ -36,10 +35,10 @@ export const viewport = {
 	],
 } satisfies Viewport;
 
-export default function RootLayout({ children }: PropsWithChildren) {
+export default function RootLayout({ children }: { readonly children: React.ReactNode }) {
 	return (
-		<html lang="en" suppressHydrationWarning>
-			<body className={cn("min-h-screen bg-background antialiased", rubik.className)}>
+		<html className={`${inter.variable} ${jetBrainsMono.variable}`} lang="en" suppressHydrationWarning>
+			<body className={cn("min-h-screen bg-background antialiased")}>
 				<Providers>
 					<div vaul-drawer-wrapper="">
 						<div className="relative max-w-2xl flex min-h-screen flex-col bg-background mx-auto">
