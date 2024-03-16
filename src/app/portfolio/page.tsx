@@ -47,7 +47,7 @@ export default function Page() {
 											<span className="font-medium underline underline-offset-4">task-tracker</span>
 										</div>
 										<span className="text-muted-foreground">
-											The website that creates you a Task that can be tracked anytime.
+											The website that creates you a Task and can be tracked anytime.
 										</span>
 									</Link>
 								</li>
