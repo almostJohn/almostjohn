@@ -1,7 +1,7 @@
 export const siteConfig = {
 	title: {
-		default: "almostjohn",
-		template: "%s • almostjohn",
+		default: "almostJohn",
+		template: "%s | almostJohn",
 	},
 	social: {
 		email: "mailto:garcia.johngale@gmail.com",
@@ -11,6 +11,23 @@ export const siteConfig = {
 		instagram: "https://instagram.com/almostjohn1",
 		facebook: "https://facebook.com/alsojohn01",
 	},
+	projects: [
+		{
+			title: "djs-framework",
+			description: "The next generation tool to build Discord Bots.",
+			href: "https://djs-framework.vercel.app",
+		},
+		{
+			title: "confessicat",
+			description: "The only Confessions Discord Bot you'll ever need.",
+			href: "https://confessicat.vercel.app",
+		},
+		{
+			title: "task-tracker",
+			description: "Create a task, delete it later.",
+			href: "https://tasktrack-v0.vercel.app",
+		},
+	],
 };
 
 export type Website = typeof siteConfig;

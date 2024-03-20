@@ -12,10 +12,6 @@ const mainNav = [
 		href: "/",
 	},
 	{
-		label: "portfolio",
-		href: "/portfolio",
-	},
-	{
 		label: "contact",
 		href: "/contact",
 	},
