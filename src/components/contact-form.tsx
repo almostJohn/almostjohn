@@ -13,7 +13,7 @@ export function ContactForm() {
 
 	if (state.succeeded) {
 		return (
-			<Alert className="bg-neutral-800">
+			<Alert className="bg-neutral-200 dark:bg-neutral-800">
 				<Check className="h-4 w-4" />
 				<AlertTitle>Message Sent!</AlertTitle>
 				<AlertDescription>Thank you for your cooperation.</AlertDescription>
@@ -29,15 +29,26 @@ export function ContactForm() {
 						<label className="text-xl font-bold leading-tight pb-3" htmlFor="email">
 							Email Address
 						</label>{" "}
-						<Input id="email" type="email" name="email" placeholder="Your email" className="bg-neutral-800" />
+						<Input
+							id="email"
+							type="email"
+							name="email"
+							placeholder="Your email"
+							className="bg-neutral-200 dark:bg-neutral-800"
+						/>
 						<ValidationError prefix="Email" field="email" errors={state.errors} />
 						<label className="text-xl font-bold leading-tight mt-3 pb-3">Message</label>
-						<Textarea id="message" name="message" placeholder="Your message" className="bg-neutral-800" />
+						<Textarea
+							id="message"
+							name="message"
+							placeholder="Your message"
+							className="bg-neutral-200 dark:bg-neutral-800"
+						/>
 						<ValidationError prefix="Message" field="message" errors={state.errors} />
 					</div>
 				</div>
 				<div className="mt-5 flex">
-					<Button type="submit" disabled={state.submitting} variant="default" className="w-full">
+					<Button type="submit" disabled={state.submitting} variant="primary" className="w-full">
 						Send Message
 					</Button>
 				</div>
