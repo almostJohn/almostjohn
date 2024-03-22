@@ -1,53 +1,48 @@
 import * as React from "react";
 import Link from "next/link";
 import { cn } from "~/lib/utils";
-import { siteConfig } from "~/config/site";
+import { Projects } from "~/components/projects";
+import { SiteFooter } from "~/components/site-footer";
 
 export default function Page() {
 	return (
-		<main className="flex-1">
-			<div className="flex container flex-col space-y-6 py-16">
-				<article className="pt-1">
-					<div className="space-y-1">
-						<div className="prose dark:prose-invert">
-							<p>
-								<small className="text-muted-foreground">IPA &nbsp; /&apos; olmos jαn/ — no meaning.</small>
-								<br />
-								Hi there, I&apos;m John, I am a 23 y/o aspiring CS student. I write about topics in{" "}
-								<strong>tech</strong> and <strong>web development</strong> that make me optimistic about the future. I
-								enjoy building things, web development, and I live in the terminal.
-							</p>
-							<div className="mt-12" />
-							<h2 className="text-xl leading-tight">Projects</h2>
-							<div className="flex-1 not-prose">
-								<div className="flex flex-col space-y-2">
-									<article>
-										<ul className="space-y-4 py-4">
-											{siteConfig.projects.map((project) => (
-												<li key={project.href}>
-													<Link className="flex flex-col space-y-1.5 !no-underline" href={project.href}>
-														<div>
-															<span className={cn("font-medium underline underline-offset-4 text-foreground")}>
-																{project.title}
-															</span>
-														</div>
-														<span className="text-muted-foreground">{project.description}</span>
-													</Link>
-												</li>
-											))}
-										</ul>
-									</article>
-								</div>
-							</div>
-							<div className="mt-12" />
-							<p>
-								If you want to get to know me better, please feel free to reach out to me via my social media handles
-								below or by <Link href="/contact">contacting me</Link> directly.
-							</p>
-						</div>
-					</div>
-				</article>
+		<>
+			<HomePageHeader />
+			<div className="pt-8" />
+			<main className="prose prose-neutral dark:prose-invert">
+				<p>
+					<small className="text-muted-foreground">&nbsp; /&apos; αιmostjohη/ - no meaning, I made it up</small>
+					<br />
+					Hi there, I&apos;m <strong>John</strong> aka <strong>almostjohn</strong>. I&apos;m a 23 y/o aspiring CS
+					student. I write about topics in <strong>tech</strong> and <strong>web development</strong> that make me{" "}
+					<strong>optimistic</strong> about the future. I enjoy <strong>building things</strong>,{" "}
+					<strong>web development</strong> and I live in the <strong>terminal</strong>.
+				</p>
+				<div className="mt-12" />
+				<h2>Projects</h2>
+				<Projects />
+				<div className="mt-12" />
+				<h2>Blog Coming Soon...</h2>
+				<div className="mt-24" />
+				<SiteFooter />
+			</main>
+		</>
+	);
+}
+
+function HomePageHeader() {
+	return (
+		<header className="h-[37.5px] flex items-center justify-between -mt-2">
+			<h1 className="text-muted-foreground">almostJohn</h1>
+			<div className="text-muted-foreground flex gap-x-4">
+				<Link
+					href="/contact"
+					target="_self"
+					className={cn("hover:underline hover:underline-offset-4 hover:transition-transform")}
+				>
+					contact
+				</Link>
 			</div>
-		</main>
+		</header>
 	);
 }

@@ -1,9 +1,7 @@
 import * as React from "react";
 import type { Metadata, Viewport } from "next";
 import { Providers } from "./providers";
-import { inter } from "~/util/fonts";
-import { SiteHeader } from "~/components/site-header";
-import { SiteFooter } from "~/components/site-footer";
+import { inter, jetBrainsMono } from "~/util/fonts";
 import { siteConfig } from "~/config/site";
 import { cn } from "~/lib/utils";
 
@@ -15,38 +13,34 @@ export const metadata = {
 	icons: {
 		other: [
 			{
-				url: "/favicon.png",
+				url: "/favicon.jpg",
 				sizes: "32x32",
-				type: "image/png",
+				type: "image/jpeg",
 			},
 			{
-				url: "/favicon.png",
+				url: "/favicon.jpg",
 				sizes: "16x16",
-				type: "image/png",
+				type: "image/jpeg",
 			},
 		],
 	},
 } satisfies Metadata;
 
 export const viewport = {
-	themeColor: [
-		{ media: "(prefers-color-scheme: light)", color: "white" },
-		{ media: "(prefers-color-scheme: dark)", color: "black" },
-	],
+	themeColor: [{ media: "(prefers-color-scheme: dark)", color: "black" }],
 } satisfies Viewport;
 
 export default function RootLayout({ children }: { readonly children: React.ReactNode }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<body className={cn("min-h-screen bg-background antialiased", inter.className)}>
+			<body
+				className={cn(
+					"min-h-screen bg-neutral-900 text-neutral-50 text-[0.9rem] antialiased p-2 mt-5",
+					`${inter.variable} ${jetBrainsMono.variable}`,
+				)}
+			>
 				<Providers>
-					<div vaul-drawer-wrapper="">
-						<div className="relative max-w-2xl flex min-h-screen flex-col bg-background mx-auto">
-							<SiteHeader />
-							{children}
-							<SiteFooter />
-						</div>
-					</div>
+					<div className="mx-auto max-w-2xl px-4">{children}</div>
 				</Providers>
 			</body>
 		</html>

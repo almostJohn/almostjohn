@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import { cn } from "~/lib/utils";
 import Link from "next/link";
 import { siteConfig } from "~/config/site";
+import { SiteFooter } from "~/components/site-footer";
 
 export const metadata = {
 	title: "Contact",
@@ -13,28 +14,48 @@ export const metadata = {
 export default function Page() {
 	return (
 		<>
-			<div className="flex container flex-col space-y-6 py-16">
-				<h1 className="font-medium text-2xl mb-8 tracking-tighter">let&apos;s get in touch</h1>
-				<div className="border-b border-border/40 pb-4">
-					<p className="text-muted-foreground prose prose-neutral dark:prose-invert">
+			<ContactPageHeader />
+			<main className="prose prose-neutral dark:prose-invert">
+				<div className="pt-1">
+					<h2>Contact</h2>
+					<p>
 						Do you want to discuss a project, an idea, or an opportunity? Just fill out this form or write me an{" "}
 						<Link
 							href={siteConfig.social.email}
 							rel="noreferrer"
 							target="_blank"
 							className={cn(
-								"border bg-transparent p-1 text-sm inline-flex items-center leading-4 no-underline rounded text-black dark:text-white",
+								"border bg-transparent p-1 text-sm inline-flex items-center leading-4 no-underline rounded-md",
 							)}
 						>
-							<Send width={14} height={14} className="!mr-1" /> Email
+							<Send width={14} height={14} aria-hidden className="!mr-1" /> Email
 						</Link>
 						.
 					</p>
-				</div>
-				<div className="p-5 flex flex-col">
+					<div className="mt-12" />
 					<ContactForm />
+					<div className="mt-24" />
+					<SiteFooter />
 				</div>
-			</div>
+			</main>
 		</>
+	);
+}
+
+function ContactPageHeader() {
+	return (
+		<header className="h-[37.5px] flex items-center justify-between -mt-2">
+			<div className="text-muted-foreground flex gap-x-4">
+				<Link
+					href="/"
+					target="_self"
+					className={cn(
+						"underline decoration-neutral-600 underline-offset-4 transition-colors focus:decoration-neutral-500 focus:outline-offset-4 hover:decoration-neutral-500",
+					)}
+				>
+					← back
+				</Link>
+			</div>
+		</header>
 	);
 }
