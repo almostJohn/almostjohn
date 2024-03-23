@@ -15,12 +15,17 @@ export const siteConfig = {
 		{
 			title: "djs-framework",
 			description: "The next generation tool to build Discord Bots.",
-			href: "https://djs-framework.vercel.app",
+			href: "https://djs-framework-v0.vercel.app",
+		},
+		{
+			title: "tsconfig",
+			description: "TypeScript configuration that you can copy and paste into your projects.",
+			href: "https://tsconfig-v0.vercel.app",
 		},
 		{
 			title: "confessicat",
 			description: "The only Confessions Discord Bot you'll ever need.",
-			href: "https://confessicat.vercel.app",
+			href: "https://confessicat-v0.vercel.app",
 		},
 		{
 			title: "task-tracker",
