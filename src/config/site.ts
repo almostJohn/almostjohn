@@ -11,6 +11,16 @@ export const siteConfig = {
 		instagram: "https://instagram.com/almostjohn1",
 		facebook: "https://facebook.com/alsojohn01",
 	},
+	navLinks: [
+		{
+			label: "blog",
+			href: "/blog",
+		},
+		{
+			label: "contact",
+			href: "/contact",
+		},
+	],
 	projects: [
 		{
 			title: "djs-framework",
@@ -23,6 +33,14 @@ export const siteConfig = {
 			href: "https://tscfg.vercel.app",
 		},
 	],
+	blogs: [
+		{
+			title: "My Journey into Programming",
+			date: "March 24, 2023",
+			href: "/blog/journey-to-programming",
+			description: "My programming journey.",
+		},
+	],
 };
 
-export type Website = typeof siteConfig;
+export type SiteConfig = typeof siteConfig;
