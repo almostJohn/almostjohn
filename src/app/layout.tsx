@@ -8,7 +8,7 @@ import { cn } from "~/lib/utils";
 import "../styles/defaultStyle.css";
 import "../styles/globals.css";
 
-export const metadata = {
+export const metadata: Metadata = {
 	title: siteConfig.title,
 	icons: {
 		other: [
@@ -24,14 +24,14 @@ export const metadata = {
 			},
 		],
 	},
-} satisfies Metadata;
+};
 
-export const viewport = {
+export const viewport: Viewport = {
 	themeColor: [
 		{ media: "(prefers-color-scheme: light)", color: "light" },
 		{ media: "(prefers-color-scheme: dark)", color: "dark" },
 	],
-} satisfies Viewport;
+};
 
 export default function RootLayout({ children }: { readonly children: React.ReactNode }) {
 	return (

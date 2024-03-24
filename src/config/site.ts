@@ -1,7 +1,7 @@
 export const siteConfig = {
-	title: {
-		default: "almostJohn",
-		template: "%s | almostJohn",
+	title: "almostJohn (John)",
+	section: {
+		paragraphContent: "/' αιmostjohη/ - no meaning, I made it up",
 	},
 	social: {
 		email: "mailto:garcia.johngale@gmail.com",
