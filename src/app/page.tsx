@@ -26,7 +26,7 @@ export default function Page() {
 				<h2>Blog</h2>
 				<div className="flex flex-col gap-4">
 					<article className="flex justify-between">
-						{siteConfig.blogs.map((blog) => (
+						{siteConfig.featureBlogs.map((blog) => (
 							<>
 								<Link
 									key={blog.href}
