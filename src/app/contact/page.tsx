@@ -33,7 +33,7 @@ export default function Page() {
 						</Link>
 						.
 					</p>
-					<div className="mt-12" />
+					<div className="mt-8" />
 					<ContactForm />
 				</div>
 			</main>
