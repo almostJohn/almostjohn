@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { readonly children: React.Reac
 		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
-					"min-h-screen bg-neutral-50 text-neutral-800 dark:bg-neutral-900 dark:text-neutral-50 text-[0.9rem] antialiased p-2 mt-5",
+					"min-h-screen bg-neutral-50 text-neutral-800 dark:bg-neutral-900 dark:text-neutral-50 antialiased p-2 mt-5",
 					`${inter.variable} ${jetBrainsMono.variable}`,
 				)}
 			>

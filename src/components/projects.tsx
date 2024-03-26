@@ -16,7 +16,7 @@ export function Projects() {
 					>
 						<span className="font-medium">{project.title}</span>
 					</Link>
-					<span className="pt-3 text-muted-foreground">{project.description}</span>
+					<p className="pt-3 text-muted-foreground">{project.description}</p>
 				</div>
 			))}
 		</div>

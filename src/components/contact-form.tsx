@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import { Check, SendHorizonal } from "lucide-react";
+import { Check } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
@@ -63,7 +63,7 @@ export function ContactForm() {
 						type="submit"
 						disabled={state.submitting}
 					>
-						Send message <SendHorizonal className="ml-2 h-4 w-4" />
+						Send message
 					</Button>
 				</div>
 			</form>

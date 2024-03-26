@@ -15,9 +15,11 @@ export default function Page() {
 	return (
 		<>
 			<MainBlogPageHeader />
-			<main className="prose prose-neutral dark:prose-invert">
+			<main className="leading-7 [&:not(:first-child)]:mt-6">
 				<div className="pt-1">
-					<h2>Blog</h2>
+					<div className="my-6">
+						<h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">Blog</h3>
+					</div>
 					<div className="my-8" />
 					<div className="flex flex-col gap-12">
 						{siteConfig.blogs.map((blog) => (
@@ -31,8 +33,8 @@ export default function Page() {
 								>
 									<span>{blog.title}</span>
 								</Link>
-								<span>{blog.description}</span>
-								<span className={cn("text-muted-foreground", rubik.className)}>{blog.date}</span>
+								<p>{blog.description}</p>
+								<p className={cn("text-sm text-muted-foreground", rubik.className)}>{blog.date}</p>
 							</article>
 						))}
 					</div>

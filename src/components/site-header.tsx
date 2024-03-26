@@ -5,7 +5,7 @@ import { siteConfig } from "~/config/site";
 
 export function HomePageHeader() {
 	return (
-		<header className="h-[37.5px] flex items-center justify-between -mt-2">
+		<header className="h-[37.5px] text-[0.9rem] flex items-center justify-between -mt-2">
 			<h1 className="text-muted-foreground">almostJohn</h1>
 			<div className="text-muted-foreground flex gap-x-4">
 				{siteConfig.navLinks.map((nav) => (
@@ -24,7 +24,7 @@ export function HomePageHeader() {
 
 export function ContactPageHeader() {
 	return (
-		<header className="h-[37.5px] flex items-center justify-between -mt-2">
+		<header className="h-[37.5px] text-[0.9rem] flex items-center justify-between -mt-2">
 			<Link
 				href="/"
 				target="_self"
@@ -51,7 +51,7 @@ export function ContactPageHeader() {
 
 export function MainBlogPageHeader() {
 	return (
-		<header className="h-[37.5px] flex items-center justify-between -mt-2">
+		<header className="h-[37.5px] text-[0.9rem] flex items-center justify-between -mt-2">
 			<Link
 				href="/"
 				target="_self"
@@ -78,7 +78,7 @@ export function MainBlogPageHeader() {
 
 export function ChildBlogPageHeader() {
 	return (
-		<header className="h-[37.5px] flex items-center justify-between -mt-2">
+		<header className="h-[37.5px] text-[0.9rem] flex items-center justify-between -mt-2">
 			<Link
 				href="/blog"
 				target="_self"

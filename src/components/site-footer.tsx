@@ -11,7 +11,7 @@ import { siteConfig } from "~/config/site";
 
 export function SiteFooter() {
 	return (
-		<div className="border-t border-border/40 pt-4 flex flex-col items-center md:flex-row md:justify-between">
+		<div className="border-t border-border/40 pt-5 pb-7 flex flex-col items-center md:flex-row md:justify-between">
 			<nav className="flex gap-6 mb-4 md:mb-0">
 				<Link
 					href={siteConfig.social.email}
@@ -63,7 +63,7 @@ export function SiteFooter() {
 				</Link>
 			</nav>
 			<div className="text-center md:text-right">
-				<p className="leading-loose text-muted-foreground">&copy; 2023 - 2024 almostJohn</p>
+				<p className="text-sm text-muted-foreground">&copy; 2023 - 2024 almostJohn</p>
 			</div>
 		</div>
 	);

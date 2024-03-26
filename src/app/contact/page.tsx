@@ -16,9 +16,11 @@ export default function Page() {
 	return (
 		<>
 			<ContactPageHeader />
-			<main className="prose prose-neutral dark:prose-invert">
+			<main className="leading-7 [&:not(:first-child)]:mt-6">
 				<div className="pt-1">
-					<h2>Contact</h2>
+					<div className="my-6">
+						<h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">Contact</h3>
+					</div>
 					<p>
 						Do you want to discuss a project, an idea, or an opportunity? Just fill out this form or write me an{" "}
 						<Link

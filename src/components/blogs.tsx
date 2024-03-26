@@ -19,7 +19,7 @@ export function Blogs() {
 						>
 							<span>{blog.title}</span>
 						</Link>
-						<span className={cn("text-muted-foreground", rubik.className)}>{blog.date}</span>
+						<p className={cn("text-muted-foreground", rubik.className)}>{blog.date}</p>
 					</>
 				))}
 			</article>
