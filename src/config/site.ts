@@ -42,7 +42,7 @@ export const siteConfig = {
 	],
 	blogs: [
 		{
-			title: "My Journey into Programming",
+			title: "My Journey to Programming",
 			date: "March 24, 2024",
 			href: "/blog/journey-to-programming",
 			description: "My programming journey.",
