@@ -2,7 +2,6 @@ import * as React from "react";
 import Link from "next/link";
 import { siteConfig } from "~/config/site";
 import { cn } from "~/lib/utils";
-import { rubik } from "~/util/fonts";
 
 export function Blogs() {
 	return (
@@ -19,7 +18,7 @@ export function Blogs() {
 						>
 							<span>{blog.title}</span>
 						</Link>
-						<p className={cn("text-muted-foreground", rubik.className)}>{blog.date}</p>
+						<p className={cn("text-muted-foreground")}>{blog.date}</p>
 					</>
 				))}
 			</article>

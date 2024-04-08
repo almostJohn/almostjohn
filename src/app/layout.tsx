@@ -1,11 +1,11 @@
 import * as React from "react";
 import type { Metadata, Viewport } from "next";
 import { Providers } from "./providers";
-import { inter, jetBrainsMono } from "~/util/fonts";
+import { fontSans } from "~/util/fonts";
 import { siteConfig } from "~/config/site";
 import { cn } from "~/lib/utils";
 
-import "../styles/defaultStyle.css";
+import "../styles/default-styles.css";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { readonly children: React.Reac
 			<body
 				className={cn(
 					"min-h-screen bg-neutral-50 text-neutral-800 dark:bg-neutral-900 dark:text-neutral-50 antialiased p-2 mt-5",
-					`${inter.variable} ${jetBrainsMono.variable}`,
+					fontSans.variable,
 				)}
 			>
 				<Providers>

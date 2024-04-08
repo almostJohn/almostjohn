@@ -5,7 +5,6 @@ import Link from "next/link";
 import { siteConfig } from "~/config/site";
 import { MainBlogPageHeader } from "~/components/site-header";
 import { SiteFooter } from "~/components/site-footer";
-import { rubik } from "~/util/fonts";
 
 export const metadata: Metadata = {
 	title: "Blog - almostJohn",
@@ -34,7 +33,7 @@ export default function Page() {
 									<span>{blog.title}</span>
 								</Link>
 								<p>{blog.description}</p>
-								<p className={cn("text-sm text-muted-foreground", rubik.className)}>{blog.date}</p>
+								<p className={cn("text-muted-foreground")}>{blog.date}</p>
 							</article>
 						))}
 					</div>

@@ -2,9 +2,9 @@
 
 import type { Metadata } from "next";
 import { Providers } from "./providers";
-import { inter } from "~/util/fonts";
+import { fontSans } from "~/util/fonts";
 
-import "../styles/defaultStyle.css";
+import "../styles/default-styles.css";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export default function GlobalError({ error }: { readonly error: Error }) {
 	console.error(error);
 
 	return (
-		<html className={inter.variable} lang="en" suppressHydrationWarning>
+		<html className={fontSans.variable} lang="en" suppressHydrationWarning>
 			<body className="antialiased min-h-screen bg-background">
 				<Providers>
 					<div className="container min-h-screen flex flex-col place-content-center place-items-center gap-8 px-8 py-16 lg:px-6 lg:py-0 mx-auto">
