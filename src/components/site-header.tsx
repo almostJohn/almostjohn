@@ -19,7 +19,7 @@ export function SiteHeader() {
 				</Link>
 				<div className="flex items-center space-x-2">
 					<Link
-						href={siteConfig.social.github}
+						href={siteConfig.social.twitter}
 						className={cn(buttonVariants({ variant: "ghost", size: "icon", className: "h-7 w-7" }))}
 					>
 						<Twitter className="h-4 w-4 fill-current" />
