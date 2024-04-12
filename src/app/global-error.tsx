@@ -2,7 +2,8 @@
 
 import type { Metadata } from "next";
 import { Providers } from "./providers";
-import { fontSans } from "~/util/fonts";
+import { fontSans, inter, jetBrainsMono } from "~/util/fonts";
+import { cn } from "~/lib/utils";
 
 import "../styles/default-styles.css";
 import "../styles/globals.css";
@@ -15,12 +16,12 @@ export const metadata: Metadata = {
 	icons: {
 		other: [
 			{
-				url: "/favicon.png",
+				url: "/j-icon-32.png",
 				sizes: "32x32",
 				type: "image/png",
 			},
 			{
-				url: "/favicon.png",
+				url: "/j-icon-16.png",
 				sizes: "16x16",
 				type: "image/png",
 			},
@@ -32,13 +33,22 @@ export default function GlobalError({ error }: { readonly error: Error }) {
 	console.error(error);
 
 	return (
-		<html className={fontSans.variable} lang="en" suppressHydrationWarning>
-			<body className="antialiased min-h-screen bg-background">
+		<html lang="en" suppressHydrationWarning>
+			<body
+				className={cn(
+					"min-h-screen bg-background text-[0.9rem] antialiased",
+					fontSans.variable,
+					inter.variable,
+					jetBrainsMono.variable,
+				)}
+			>
 				<Providers>
-					<div className="container min-h-screen flex flex-col place-content-center place-items-center gap-8 px-8 py-16 lg:px-6 lg:py-0 mx-auto">
-						<h1 className="text-[8rem] font-black leading-none md:text-[6rem]">500</h1>
-						<h2 className="text-[6rem] md:text-[3rem] text-center text-muted-foreground">Error.</h2>
-					</div>
+					<main className="flex-1">
+						<div className="container flex flex-col items-center justify-center pt-24 pb-24 space-y-4">
+							<h1 className="text-2xl font-bold tracking-tighter">500</h1>
+							<p className="text-muted-foreground">Page Error.</p>
+						</div>
+					</main>
 				</Providers>
 			</body>
 		</html>

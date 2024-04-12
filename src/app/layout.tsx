@@ -1,9 +1,10 @@
 import * as React from "react";
 import type { Metadata, Viewport } from "next";
 import { Providers } from "./providers";
-import { fontSans } from "~/util/fonts";
+import { fontSans, inter, jetBrainsMono } from "~/util/fonts";
 import { siteConfig } from "~/config/site";
 import { cn } from "~/lib/utils";
+import { SiteHeader } from "~/components/site-header";
 
 import "../styles/default-styles.css";
 import "../styles/globals.css";
@@ -13,14 +14,14 @@ export const metadata: Metadata = {
 	icons: {
 		other: [
 			{
-				url: "/favicon.jpg",
+				url: "/j-icon-32.png",
 				sizes: "32x32",
-				type: "image/jpeg",
+				type: "image/png",
 			},
 			{
-				url: "/favicon.jpg",
+				url: "/j-icon-16.png",
 				sizes: "16x16",
-				type: "image/jpeg",
+				type: "image/png",
 			},
 		],
 	},
@@ -38,12 +39,17 @@ export default function RootLayout({ children }: { readonly children: React.Reac
 		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
-					"min-h-screen bg-neutral-50 text-neutral-800 dark:bg-neutral-900 dark:text-neutral-50 antialiased p-2 mt-5",
+					"min-h-screen bg-background text-[0.9rem] antialiased",
 					fontSans.variable,
+					inter.variable,
+					jetBrainsMono.variable,
 				)}
 			>
 				<Providers>
-					<div className="mx-auto max-w-2xl px-4">{children}</div>
+					<div className="max-w-2xl mx-auto flex min-h-screen flex-col py-8">
+						<SiteHeader />
+						{children}
+					</div>
 				</Providers>
 			</body>
 		</html>

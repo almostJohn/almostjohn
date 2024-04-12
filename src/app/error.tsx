@@ -4,9 +4,11 @@ export default function Error({ error }: { readonly error: Error }) {
 	console.error(error);
 
 	return (
-		<div className="container min-h-screen flex flex-col place-content-center place-items-center gap-8 px-8 py-16 lg:px-6 lg:py-0 mx-auto">
-			<h1 className="text-[8rem] font-black leading-none md:text-[6rem]">500</h1>
-			<h2 className="text-[6rem] md:text-[3rem] text-center text-muted-foreground">Error.</h2>
-		</div>
+		<main className="flex-1">
+			<div className="container flex flex-col items-center justify-center pt-24 pb-24 space-y-4">
+				<h1 className="text-2xl font-bold tracking-tighter">500</h1>
+				<p className="text-muted-foreground">Page Error.</p>
+			</div>
+		</main>
 	);
 }

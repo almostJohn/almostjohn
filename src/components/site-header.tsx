@@ -1,104 +1,38 @@
 import * as React from "react";
 import Link from "next/link";
-import { cn } from "~/lib/utils";
 import { siteConfig } from "~/config/site";
+import { ModeToggle } from "./mode-toggle";
+import { buttonVariants } from "./ui/button";
+import { cn } from "~/lib/utils";
+import { SiGithub as Github } from "@icons-pack/react-simple-icons";
+import { Twitter } from "lucide-react";
 
-export function HomePageHeader() {
+export function SiteHeader() {
 	return (
-		<header className="h-[37.5px] text-[0.9rem] flex items-center justify-between -mt-2">
-			<h1 className="text-muted-foreground">almostJohn</h1>
-			<div className="text-muted-foreground flex gap-x-4">
-				{siteConfig.navLinks.map((nav) => (
+		<div className="container">
+			<div className="flex items-center justify-between py-4">
+				<Link className="flex items-center space-x-2" href="/">
+					<div className="flex flex-col space-y-1 text-sm leading-none">
+						<span className="text-lg font-bold">{siteConfig.name}</span>
+						<span>{siteConfig.subName}</span>
+					</div>
+				</Link>
+				<div className="flex items-center space-x-2">
 					<Link
-						key={nav.href}
-						href={nav.href}
-						className={cn("hover:underline hover:underline-offset-4 transition-transform")}
+						href={siteConfig.social.github}
+						className={cn(buttonVariants({ variant: "ghost", size: "icon", className: "h-7 w-7" }))}
 					>
-						{nav.label}
+						<Twitter className="h-4 w-4 fill-current" />
 					</Link>
-				))}
-			</div>
-		</header>
-	);
-}
-
-export function ContactPageHeader() {
-	return (
-		<header className="h-[37.5px] text-[0.9rem] flex items-center justify-between -mt-2">
-			<Link
-				href="/"
-				target="_self"
-				className={cn(
-					"underline decoration-neutral-600 underline-offset-4 transition-colors focus:decoration-neutral-500 focus:outline-offset-4 hover:decoration-neutral-500",
-				)}
-			>
-				← back
-			</Link>
-			<div className="text-muted-foreground flex gap-x-4">
-				{siteConfig.navLinks.map((nav) => (
 					<Link
-						key={nav.href}
-						href={nav.href}
-						className={cn("hover:underline hover:underline-offset-4 transition-transform")}
+						href={siteConfig.social.github}
+						className={cn(buttonVariants({ variant: "ghost", size: "icon", className: "h-7 w-7" }))}
 					>
-						{nav.label}
+						<Github className="h-4 w-4 fill-current" />
 					</Link>
-				))}
+					<ModeToggle />
+				</div>
 			</div>
-		</header>
-	);
-}
-
-export function MainBlogPageHeader() {
-	return (
-		<header className="h-[37.5px] text-[0.9rem] flex items-center justify-between -mt-2">
-			<Link
-				href="/"
-				target="_self"
-				className={cn(
-					"underline decoration-neutral-600 underline-offset-4 transition-colors focus:decoration-neutral-500 focus:outline-offset-4 hover:decoration-neutral-500",
-				)}
-			>
-				← back
-			</Link>
-			<div className="text-muted-foreground flex gap-x-4">
-				{siteConfig.navLinks.map((nav) => (
-					<Link
-						key={nav.href}
-						href={nav.href}
-						className={cn("hover:underline hover:underline-offset-4 transition-transform")}
-					>
-						{nav.label}
-					</Link>
-				))}
-			</div>
-		</header>
-	);
-}
-
-export function ChildBlogPageHeader() {
-	return (
-		<header className="h-[37.5px] text-[0.9rem] flex items-center justify-between -mt-2">
-			<Link
-				href="/blog"
-				target="_self"
-				className={cn(
-					"underline decoration-neutral-600 underline-offset-4 transition-colors focus:decoration-neutral-500 focus:outline-offset-4 hover:decoration-neutral-500",
-				)}
-			>
-				← back
-			</Link>
-			<div className="text-muted-foreground flex gap-x-4">
-				{siteConfig.navLinks.map((nav) => (
-					<Link
-						key={nav.href}
-						href={nav.href}
-						className={cn("hover:underline hover:underline-offset-4 transition-transform")}
-					>
-						{nav.label}
-					</Link>
-				))}
-			</div>
-		</header>
+		</div>
 	);
 }
