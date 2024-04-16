@@ -20,6 +20,12 @@ export const siteConfig = {
 			href: "https://tscfg.vercel.app",
 			description: "a typescript configuration that you can copy and paste into your projects.",
 		},
+		{
+			title: "tasktrove",
+			href: "https://tsktrve.vercel.app",
+			description: "organize now, delete later.",
+			info: "Development",
+		},
 	],
 };
 
