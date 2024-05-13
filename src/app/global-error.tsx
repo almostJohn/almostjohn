@@ -5,7 +5,6 @@ import { Providers } from "./providers";
 import { fontSans, inter, jetBrainsMono } from "~/util/fonts";
 import { cn } from "~/lib/utils";
 
-import "../styles/default-styles.css";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {

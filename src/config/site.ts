@@ -23,7 +23,7 @@ export const siteConfig = {
 		{
 			title: "tasktrove",
 			href: "https://tsktrve.vercel.app",
-			description: "organize now, delete later.",
+			description: "streamlined task management for busy professionals.",
 			info: "Development",
 		},
 	],

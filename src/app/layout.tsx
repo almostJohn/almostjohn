@@ -6,7 +6,6 @@ import { siteConfig } from "~/config/site";
 import { cn } from "~/lib/utils";
 import { SiteHeader } from "~/components/site-header";
 
-import "../styles/default-styles.css";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
