@@ -1,6 +1,5 @@
 import * as React from "react";
 import type { Metadata, Viewport } from "next";
-import { Providers } from "./providers";
 import { fontSans, inter, jetBrainsMono } from "~/util/fonts";
 import { siteConfig } from "~/config/site";
 import { cn } from "~/lib/utils";
@@ -27,10 +26,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-	themeColor: [
-		{ media: "(prefers-color-scheme: light)", color: "light" },
-		{ media: "(prefers-color-scheme: dark)", color: "dark" },
-	],
+	themeColor: [{ media: "(prefers-color-scheme: light)", color: "light" }],
 };
 
 export default function RootLayout({ children }: { readonly children: React.ReactNode }) {
@@ -38,18 +34,16 @@ export default function RootLayout({ children }: { readonly children: React.Reac
 		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
-					"min-h-screen bg-background text-[0.9rem] antialiased",
+					"min-h-screen bg-background text-foreground text-[0.9rem] antialiased",
 					fontSans.variable,
 					inter.variable,
 					jetBrainsMono.variable,
 				)}
 			>
-				<Providers>
-					<div className="max-w-2xl mx-auto flex min-h-screen flex-col py-8">
-						<SiteHeader />
-						{children}
-					</div>
-				</Providers>
+				<div className="mx-auto max-w-2xl flex min-h-screen flex-col py-8">
+					<SiteHeader />
+					{children}
+				</div>
 			</body>
 		</html>
 	);
