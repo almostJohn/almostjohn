@@ -1,25 +1,25 @@
 import * as React from "react";
 import type { Metadata, Viewport } from "next";
 import { fontSans, inter, jetBrainsMono } from "~/util/fonts";
-import { siteConfig } from "~/config/site";
+import { METADATA_INDEX_PAGE_TITLE } from "~/util/constants";
 import { cn } from "~/lib/utils";
 import { SiteFooter } from "~/components/site-footer";
 
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
-	title: siteConfig.title,
+	title: METADATA_INDEX_PAGE_TITLE,
 	icons: {
 		other: [
 			{
-				url: "/j-icon-32.png",
+				url: "/me.jpg",
 				sizes: "32x32",
-				type: "image/png",
+				type: "image/jpeg",
 			},
 			{
-				url: "/j-icon-16.png",
+				url: "/me.jpg",
 				sizes: "16x16",
-				type: "image/png",
+				type: "image/jpeg",
 			},
 		],
 	},

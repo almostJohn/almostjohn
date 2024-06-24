@@ -1,6 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
-import { siteConfig } from "~/config/site";
+import { SCREEN_NAME } from "~/util/constants";
 
 export function SiteHeader() {
 	return (
@@ -8,7 +8,7 @@ export function SiteHeader() {
 			<div className="flex max-w-screen-2xl h-14 items-center justify-between">
 				<div className="flex items-center">
 					<Link href="/" className="font-medium text-neutral-500">
-						{siteConfig.name}
+						{SCREEN_NAME}
 					</Link>
 				</div>
 				<div className="flex items-center space-x-4">
