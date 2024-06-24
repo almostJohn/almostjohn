@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from "next";
 import { fontSans, inter, jetBrainsMono } from "~/util/fonts";
 import { siteConfig } from "~/config/site";
 import { cn } from "~/lib/utils";
-import { SiteHeader } from "~/components/site-header";
+import { SiteFooter } from "~/components/site-footer";
 
 import "../styles/globals.css";
 
@@ -34,15 +34,15 @@ export default function RootLayout({ children }: { readonly children: React.Reac
 		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
-					"min-h-screen bg-background text-foreground text-[0.9rem] antialiased",
+					"min-h-screen bg-neutral-900 text-neutral-100 text-[0.9rem] antialiased",
 					fontSans.variable,
 					inter.variable,
 					jetBrainsMono.variable,
 				)}
 			>
 				<div className="mx-auto max-w-2xl flex min-h-screen flex-col py-8">
-					<SiteHeader />
 					{children}
+					<SiteFooter />
 				</div>
 			</body>
 		</html>
