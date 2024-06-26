@@ -8,22 +8,19 @@ export function MainBlog() {
 			<div className="pt-6 flex flex-col space-y-4">
 				{BLOGS.map((item, i) => (
 					<>
-						<h1 className="text-2xl font-bold leading-none tracking-tighter">{item.title}</h1>
-						<div key={i} className="flex flex-col gap-4">
-							{item.options.map((opts, i) => (
-								<>
-									<Link
-										key={i}
-										href={opts.href}
-										className="font-medium underline underline-offset-4 decoration-neutral-500 transition-colors hover:decoration-neutral-100"
-									>
+						<h1 key={i} className="text-2xl font-bold leading-none tracking-tighter mb-4">
+							{item.title}
+						</h1>
+						{item.options.map((opts) => (
+							<>
+								<Link key={opts.href} href={opts.href} className="flex flex-col space-y-1">
+									<h1 className="text-sm font-medium underline underline-offset-4 decoration-neutral-500 transition-colors hover:decoration-neutral-100">
 										{opts.title}
-									</Link>
-									<span>{opts.description}</span>
-									<span>{opts.date}</span>
-								</>
-							))}
-						</div>
+									</h1>
+									<span className="text-neutral-500">{opts.date}</span>
+								</Link>
+							</>
+						))}
 					</>
 				))}
 			</div>

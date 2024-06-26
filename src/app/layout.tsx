@@ -1,25 +1,25 @@
 import * as React from "react";
 import type { Metadata, Viewport } from "next";
 import { fontSans, inter, jetBrainsMono } from "~/util/fonts";
-import { METADATA_INDEX_PAGE_TITLE } from "~/util/constants";
+import { METADATA_TITLE } from "~/util/constants";
 import { cn } from "~/lib/utils";
-import { SiteFooter } from "~/components/site-footer";
+import { SiteHeader } from "~/components/site-header";
 
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
-	title: METADATA_INDEX_PAGE_TITLE,
+	title: METADATA_TITLE,
 	icons: {
 		other: [
 			{
-				url: "/me.jpg",
+				url: "/favicon.png",
 				sizes: "32x32",
-				type: "image/jpeg",
+				type: "image/png",
 			},
 			{
-				url: "/me.jpg",
+				url: "/favicon.png",
 				sizes: "16x16",
-				type: "image/jpeg",
+				type: "image/png",
 			},
 		],
 	},
@@ -34,15 +34,15 @@ export default function RootLayout({ children }: { readonly children: React.Reac
 		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
-					"min-h-screen bg-neutral-900 text-neutral-100 text-[0.9rem] antialiased",
+					"min-h-screen bg-neutral-900 text-neutral-100 antialiased",
 					fontSans.variable,
 					inter.variable,
 					jetBrainsMono.variable,
 				)}
 			>
-				<div className="mx-auto max-w-2xl flex min-h-screen flex-col py-8">
+				<div className="mx-auto max-w-2xl text-[0.9rem] flex min-h-screen flex-col">
+					<SiteHeader />
 					{children}
-					<SiteFooter />
 				</div>
 			</body>
 		</html>

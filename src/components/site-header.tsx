@@ -1,23 +1,17 @@
 import * as React from "react";
 import Link from "next/link";
-import { SCREEN_NAME } from "~/util/constants";
+import { HEADER_LINKS } from "~/util/constants";
 
 export function SiteHeader() {
 	return (
-		<header className="container">
-			<div className="flex max-w-screen-2xl h-14 items-center justify-between">
-				<div className="flex items-center">
-					<Link href="/" className="font-medium text-neutral-500">
-						{SCREEN_NAME}
-					</Link>
-				</div>
-				<div className="flex items-center space-x-4">
-					<Link href="/blog" className="font-medium text-neutral-500 hover:underline hover:underline-offset-4">
-						blog
-					</Link>
-					<Link href="/music" className="font-medium text-neutral-500 hover:underline hover:underline-offset-4">
-						music
-					</Link>
+		<header className="sticky top-0 z-50 w-full bg-neutral-900">
+			<div className="container flex max-w-screen-2xl h-14 items-center justify-between">
+				<div className="flex items-center space-x-4 transition-colors hover:text-neutral-500">
+					{HEADER_LINKS.map((item) => (
+						<Link key={item.href} href={item.href} className="transition-colors hover:text-neutral-100">
+							{item.title}
+						</Link>
+					))}
 				</div>
 			</div>
 		</header>
