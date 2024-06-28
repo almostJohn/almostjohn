@@ -1,6 +1,7 @@
 export const FULL_NAME = "John Gale Garcia";
 export const SHORT_NAME = "John";
 export const SCREEN_NAME = "almostJohn";
+export const TAG = "Software Developer";
 
 export const EMAIL_URL = "mailto:garcia.johngale@gmail.com";
 export const GITHUB_URL = "https://github.com/almostJohn";
@@ -15,7 +16,7 @@ export const METADATA_TITLE = {
 };
 
 export const METADATA_BLOG_PAGE_TITLE = "Blog";
-export const METADATA_MUSIC_PAGE_TITLE = "Music";
+export const METADATA_SOCIALS_PAGE_TITLE = "Socials";
 
 export const HEADER_LINKS = [
 	{
