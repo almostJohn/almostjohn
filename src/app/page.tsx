@@ -4,6 +4,7 @@ import { Introduction } from "~/components/introduction";
 import { FULL_NAME, TAG } from "~/util/constants";
 import { FeaturedProjects } from "~/components/projects/featured-projects";
 import { FeaturedBlogs } from "~/components/blog/featured-blogs";
+import { QuickLinks } from "~/components/quick-links";
 
 export default function IndexPage() {
 	return (
@@ -18,6 +19,7 @@ export default function IndexPage() {
 						</div>
 					</div>
 					<Introduction />
+					<QuickLinks />
 					<FeaturedProjects />
 					<FeaturedBlogs />
 				</div>
