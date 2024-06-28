@@ -18,7 +18,7 @@ export function SiteHeader() {
 							key={item.href}
 							href={item.href}
 							className={cn(
-								"transition-colors text-neutral-400 hover:text-neutral-100",
+								"transition-colors text-neutral-500 hover:text-neutral-100",
 								pathname === item.href ? "text-neutral-100" : "hover:text-neutral-100",
 							)}
 						>
