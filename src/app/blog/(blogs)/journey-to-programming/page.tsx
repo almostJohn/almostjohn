@@ -8,12 +8,10 @@ export const metadata: Metadata = {
 export default function BlogPage() {
 	return (
 		<main className="flex-1 pb-16">
-			<div className="container flex flex-col space-y-4">
-				<div className="pt-6 flex flex-col space-y-4">
+			<div className="container flex flex-col">
+				<div className="pt-6 flex flex-col space-y-5">
 					<div className="flex flex-col space-y-2">
-						<h4 className="text-xl font-medium leading-tight tracking-tighter md:text-2xl">
-							My Journey To Programming
-						</h4>
+						<h1 className="text-xl font-medium tracking-tighter md:text-2xl">My Journey To Programming</h1>
 						<div className="flex items-center justify-between">
 							<p className="text-xs text-neutral-500">March 24, 2024</p>
 							<p className="text-xs text-neutral-500">(2 min read)</p>
