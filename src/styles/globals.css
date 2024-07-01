@@ -11,10 +11,6 @@ code {
 	font-family: var(--font-mono);
 }
 
-pre {
-	text-wrap: wrap;
-}
-
 @layer base {
 	:root {
 		--background: 0 0% 100%;

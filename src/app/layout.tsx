@@ -1,6 +1,6 @@
 import * as React from "react";
 import type { Metadata, Viewport } from "next";
-import { fontSans, inter, jetBrainsMono } from "~/util/fonts";
+import { inter, jetBrainsMono } from "~/util/fonts";
 import { METADATA_TITLE } from "~/util/constants";
 import { cn } from "~/lib/utils";
 import { SiteHeader } from "~/components/site-header";
@@ -35,7 +35,6 @@ export default function RootLayout({ children }: { readonly children: React.Reac
 			<body
 				className={cn(
 					"min-h-screen bg-neutral-900 text-neutral-100 antialiased",
-					fontSans.variable,
 					inter.variable,
 					jetBrainsMono.variable,
 				)}
