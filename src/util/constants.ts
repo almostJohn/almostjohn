@@ -1,7 +1,7 @@
 export const FULL_NAME = "John Gale Garcia";
 export const TAG = "Software Developer";
 export const INTRODUCTION =
-	"I'm 23 y/o aspiring CS student. I like playing guitar and listening to music. I enjoy language design and web development. If I'm not coding, I'm probably watching anime, drawing, or working out.";
+	"I'm a 23 y/o frontend developer and optimist. I like playing guitar and listening to music. I enjoy language design and web development. If I'm not coding, I'm probably watching anime, drawing, or working out.";
 
 export const EMAIL_URL = "mailto:garcia.johngale@gmail.com";
 export const GITHUB_URL = "https://github.com/almostJohn";
