@@ -39,9 +39,4 @@ export const PROJECTS = [
 		href: "https://tscfg.vercel.app",
 		description: "a typescript configuration that you can copy and paste into your projects.",
 	},
-	{
-		title: "tasktrove",
-		href: "https://tsktrve.vercel.app",
-		description: "streamlined task management for busy professionals.",
-	},
 ];
