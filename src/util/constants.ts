@@ -30,6 +30,11 @@ export const HEADER_LINKS = [
 
 export const PROJECTS = [
 	{
+		title: "secretposts.link",
+		href: "https://secretposts-link.vercel.app",
+		description: "express yourself freely without revealing who you are.",
+	},
+	{
 		title: "djs-framework",
 		href: "https://djs-fwk.vercel.app",
 		description: "a framework for building discord bot the fastest way.",
