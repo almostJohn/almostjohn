@@ -1,14 +1,15 @@
 import * as React from "react";
 import type { Metadata, Viewport } from "next";
-import { inter, jetBrainsMono } from "~/util/fonts";
-import { METADATA_TITLE } from "~/util/constants";
+import { inter, jetBrainsMono } from "~/lib/fonts";
+import { siteConfig } from "~/config/site";
 import { cn } from "~/lib/utils";
-import { SiteHeader } from "~/components/site-header";
+import { Navbar } from "~/components/Navbar";
+import { Footer } from "~/components/Footer";
 
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
-	title: METADATA_TITLE,
+	title: siteConfig.title,
 	icons: {
 		other: [
 			{
@@ -34,14 +35,15 @@ export default function RootLayout({ children }: { readonly children: React.Reac
 		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
-					"min-h-screen bg-neutral-900 text-neutral-100 antialiased",
+					"bg-background text-foreground antialiased selection:bg-sky-500 selection:text-white",
 					inter.variable,
 					jetBrainsMono.variable,
 				)}
 			>
-				<div className="mx-auto max-w-2xl text-[0.9rem] flex min-h-screen flex-col">
-					<SiteHeader />
+				<div className="mx-auto max-w-6xl min-h-screen flex flex-col">
+					<Navbar />
 					{children}
+					<Footer />
 				</div>
 			</body>
 		</html>
