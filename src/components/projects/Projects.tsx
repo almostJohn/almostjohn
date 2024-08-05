@@ -21,7 +21,7 @@ export function Projects() {
 							href={siteConfig.projects.djs_framework}
 							className="text-center text-2xl font-bold leading-tight tracking-tighter underline-offset-4 transition-transform md:text-4xl md:text-left hover:underline"
 						>
-							<span className="text-yellow-600">djs</span>-framework
+							d<span className="text-yellow-600">js</span>-framework
 						</Link>
 						<p className="text-sm font-light text-muted-foreground">
 							A framework for building discord bot the fastest way.

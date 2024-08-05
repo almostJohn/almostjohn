@@ -27,7 +27,7 @@ export const siteConfig = {
 	],
 	projects: {
 		secretposts: "https://secretposts-link.vercel.app",
-		djs_framework: "ttps://djs-fwk.vercel.app",
+		djs_framework: "https://djs-fwk.vercel.app",
 		tsconfig: "https://tscfg.vercel.app",
 	},
 } as const;
