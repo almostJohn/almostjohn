@@ -156,7 +156,7 @@ Sure, you can! Since our Map of boxes are keyed with their flavor names, so simp
 > Ensure the key exists before calling `.delete()` method to avoid unnecessary operations.
 
 ```js
-const requestedBoxToBeRemoved = cookieBoxes.delete("Sugar Cookie");
+const requestedBox = cookieBoxes.delete("Sugar Cookie");
 // returns true or false depending on whether the key existed. If the key existed and was successfully removed, it returns true; otherwise, it returns false
 ```
 

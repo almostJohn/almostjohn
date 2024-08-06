@@ -14,35 +14,35 @@
 }
 
 .markdown a {
-	@apply underline-offset-4 transition-transform hover:underline;
+	@apply underline underline-offset-2 font-bold text-[#5865f2] decoration-[#5865f2];
 }
 
 .markdown h1 {
-	@apply text-2xl font-semibold leading-tight tracking-tighter mt-12 mb-4 border-b border-border md:text-5xl;
+	@apply text-4xl font-bold tracking-tighter mt-12 mb-4 border-b border-border;
 }
 
 .markdown h2 {
-	@apply text-xl font-semibold leading-tight tracking-tighter mt-12 mb-4 border-b border-border md:text-2xl;
+	@apply text-2xl font-bold tracking-tighter mt-12 mb-4 border-b border-border;
 }
 
 .markdown h3 {
-	@apply text-lg font-semibold leading-tight tracking-tighter mt-8 mb-4 border-b border-border md:text-xl;
+	@apply text-xl font-bold tracking-tighter mt-8 mb-4 border-b border-border;
 }
 
 .markdown blockquote {
-	@apply block space-y-1 border-l-4 border-[#5865f2] px-2 py-1 bg-muted rounded;
+	@apply block space-y-1 border-l-4 border-[#5865f2] p-2 bg-white shadow-md rounded;
 }
 
 .markdown blockquote p {
-	@apply m-0;
+	@apply m-0 text-lg;
 }
 
 .markdown code {
-	@apply inline-flex py-1 px-0.5 rounded text-sm font-medium border border-border bg-muted;
+	@apply inline-flex py-0.5 px-1 rounded text-sm font-medium border border-border bg-muted;
 	white-space: nowrap;
 }
 
 .markdown pre code {
-	@apply block p-4 w-full text-xs/relaxed border border-border bg-background overflow-auto rounded md:text-sm/relaxed;
+	@apply block p-4 w-full border border-border bg-muted overflow-auto rounded;
 	white-space: pre;
 }

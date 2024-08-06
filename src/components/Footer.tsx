@@ -1,10 +1,11 @@
 import * as React from "react";
-import { Mail, TwitterIcon } from "lucide-react";
+import { Send } from "lucide-react";
 import {
 	SiGithub as GitHub,
 	SiDiscord as Discord,
 	SiInstagram as Instagram,
 	SiFacebook as Facebook,
+	SiTwitter as Twitter,
 } from "@icons-pack/react-simple-icons";
 import { siteConfig } from "~/config/site";
 
@@ -21,7 +22,7 @@ export function Footer() {
 						target="_blank"
 						className="transition-colors hover:text-foreground/90"
 					>
-						<Mail className="h-7 w-7" />
+						<Send className="h-7 w-7" />
 					</a>
 					<a
 						aria-label="GitHub"
@@ -51,7 +52,7 @@ export function Footer() {
 						target="_blank"
 						className="transition-colors hover:text-foreground/90"
 					>
-						<TwitterIcon className="h-7 w-7" />
+						<Twitter className="h-7 w-7" />
 					</a>
 					<a
 						aria-label="Instagram"

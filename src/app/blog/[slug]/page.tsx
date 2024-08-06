@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllPosts, getPostBySlug } from "~/lib/api";
 import { markdownToHtml } from "~/lib/markdownToHtml";
-import { PostHeader } from "~/components/post-header";
-import { PostBody } from "~/components/post-body";
+import { PostHeader } from "~/components/PostHeader";
+import { PostBody } from "~/components/PostBody";
 
 export function generateMetadata({ params }: Params): Metadata {
 	const post = getPostBySlug(params.slug);

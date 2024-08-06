@@ -12,7 +12,7 @@ export default function IndexPage() {
 						<h1 className="text-6xl font-bold leading-tight tracking-tighter">
 							Hey, I&apos;m <span className="text-sky-500">John</span>!
 						</h1>
-						<p className="py-2 max-w-md text-lg font-light text-muted-foreground md:text-xl">
+						<p className="py-2 text-balance max-w-md text-lg font-light text-muted-foreground md:text-xl">
 							I&apos;m 23 year old <strong>frontend developer</strong> and <strong>optimist</strong>. I like playing
 							guitar and listening to music. I enjoy <strong>language design</strong> and{" "}
 							<strong>web development</strong>. If I&apos;m not coding, I&apos;m probably watching anime or working out.

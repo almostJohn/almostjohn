@@ -1,6 +1,5 @@
 import * as React from "react";
 import type { Metadata } from "next";
-import { FeaturedProject } from "~/components/projects/FeaturedProject";
 import { Projects } from "~/components/projects/Projects";
 
 export const metadata: Metadata = {
@@ -17,11 +16,8 @@ export default function Page() {
 						Take a look at some of my projects that I&apos;ve worked on, websites that I made, and frameworks I built.
 					</p>
 				</div>
-				<div className="pt-6 flex flex-col space-y-4">
-					<FeaturedProject />
-					<div className="pt-12">
-						<Projects />
-					</div>
+				<div className="pt-6">
+					<Projects />
 				</div>
 			</div>
 		</main>
