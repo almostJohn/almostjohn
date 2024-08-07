@@ -1,14 +1,36 @@
 import * as React from "react";
+import Link from "next/link";
 import { getAllPosts } from "~/lib/api";
-import { BlogCard } from "~/components/cards/BlogCard";
+import { HomePageBlogContainer, MainBlogContainer } from "../container/BlogContainer";
 
-export function Blogs({ limit }: { limit?: number }) {
+export function HomePageBlogs({ limit }: { limit?: number }) {
 	const posts = getAllPosts().slice(0, limit);
 
 	return (
-		<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+		<div className="flex flex-col space-y-4">
 			{posts.map((post, i) => (
-				<BlogCard key={i} title={post.title} href={`/blog/${post.slug}`} date={post.date} readTime={post.readTime!} />
+				<HomePageBlogContainer key={i} title={post.title} href={`/blog/${post.slug}`} date={post.date} />
+			))}
+			<Link href="/blog" className="underline underline-offset-4 decoration-neutral-500 hover:decoration-neutral-200">
+				All posts →
+			</Link>
+		</div>
+	);
+}
+
+export function MainBlogs() {
+	const posts = getAllPosts();
+
+	return (
+		<div className="flex flex-col space-y-4">
+			{posts.map((post, i) => (
+				<MainBlogContainer
+					key={i}
+					title={post.title}
+					href={`/blog/${post.slug}`}
+					date={post.date}
+					readTime={post.readTime!}
+				/>
 			))}
 		</div>
 	);

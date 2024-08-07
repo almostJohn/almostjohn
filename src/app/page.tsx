@@ -1,47 +1,56 @@
 import * as React from "react";
-import Link from "next/link";
+import { HomePageBlogs } from "~/components/blogs/Blogs";
+import { Projects } from "~/components/projects/Projects";
 import { cn } from "~/lib/utils";
-import { buttonVariants } from "~/components/ui/button";
+import { jetBrainsMono } from "~/lib/fonts";
+import { siteConfig } from "~/config/site";
 
 export default function IndexPage() {
 	return (
-		<main className="flex-1 pb-16">
-			<div className="container flex flex-col space-y-4">
-				<div className="flex flex-col space-y-4 pt-16 md:pt-20 lg:pt-24">
-					<div className="flex flex-col space-y-2.5">
-						<h1 className="text-6xl font-bold leading-tight tracking-tighter">
-							Hey, I&apos;m <span className="text-sky-500">John</span>!
-						</h1>
-						<p className="py-2 text-balance max-w-md text-lg font-light text-muted-foreground md:text-xl">
-							I&apos;m 23 year old <strong>frontend developer</strong> and <strong>optimist</strong>. I like playing
-							guitar and listening to music. I enjoy <strong>language design</strong> and{" "}
-							<strong>web development</strong>. If I&apos;m not coding, I&apos;m probably watching anime or working out.
-						</p>
-						<div className="pt-2 flex items-center gap-2">
-							<Link
-								href="/portfolio"
-								className={cn(
-									buttonVariants({
-										variant: "default",
-										className: "h-10",
-									}),
-								)}
-							>
-								View Portfolio
-							</Link>
-							<Link
-								href="/blog"
-								className={cn(
-									buttonVariants({
-										variant: "outline",
-										className: "h-10",
-									}),
-								)}
-							>
-								Read my blog
-							</Link>
-						</div>
-					</div>
+		<main className="container flex flex-1 flex-col space-y-4 pt-8 pb-16">
+			<h1 className="text-2xl font-bold tracking-tighter">hey, I&apos;m john 👋</h1>
+			<p className="font-light">
+				I&apos;m 23 year old <strong className="font-bold">frontend developer</strong> and optimist. I like playing
+				guitar and listening to music. I enjoy <strong className="font-bold">language design</strong> and{" "}
+				<strong className="font-bold">web development</strong>. If I&apos;m not coding, I&apos;m probably watching anime
+				or working out.
+			</p>
+			<div className="pt-6 flex flex-col space-y-4">
+				<h1 className={cn("text-lg font-medium tracking-tighter", jetBrainsMono.className)}>projects</h1>
+				<Projects />
+			</div>
+			<div className="pt-6 flex flex-col space-y-4">
+				<h1 className={cn("text-lg font-bold tracking-tighter", jetBrainsMono.className)}>blog</h1>
+				<HomePageBlogs limit={3} />
+			</div>
+			<div className="pt-8 pb-12">
+				<div className={cn("flex items-center gap-2", jetBrainsMono.className)}>
+					<a
+						href={siteConfig.socialLinks.email}
+						rel="noreferrer"
+						target="_blank"
+						className="font-medium underline underline-offset-4 decoration-neutral-500 hover:decoration-neutral-100"
+					>
+						email
+					</a>
+					/
+					<a
+						href={siteConfig.socialLinks.github}
+						rel="noreferrer"
+						target="_blank"
+						className="font-medium underline underline-offset-4 decoration-neutral-500 hover:decoration-neutral-100"
+					>
+						github
+					</a>
+					/
+					<a
+						href={siteConfig.socialLinks.twitter}
+						rel="noreferrer"
+						target="_blank"
+						className="font-medium underline underline-offset-4 decoration-neutral-500 hover:decoration-neutral-100"
+					>
+						twitter
+					</a>
 				</div>
 			</div>
 		</main>

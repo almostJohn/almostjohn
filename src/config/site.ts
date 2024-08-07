@@ -13,29 +13,31 @@ export const siteConfig = {
 	},
 	navLinks: [
 		{
-			title: "Home",
+			title: "home",
 			href: "/",
 		},
 		{
-			title: "Portfolio",
-			href: "/portfolio",
-		},
-		{
-			title: "Blog",
+			title: "blog",
 			href: "/blog",
 		},
 	],
-	projects: {
-		secretposts: "https://secretposts-link.vercel.app",
-		djs_framework: {
-			website: "https://djs-fwk.vercel.app",
-			github: "https://github.com/almostJohn/djs-framework",
+	projects: [
+		{
+			title: "secretposts.link",
+			description: "Express yourself freely without revealing who you are.",
+			href: "https://secretposts-link.vercel.app",
 		},
-		tsconfig: {
-			website: "https://tscfg.vercel.app",
-			github: "https://github.com/almostJohn/tsconfig",
+		{
+			title: "djs-framework",
+			description: "A framework for building discord bot the fastest way.",
+			href: "https://djs-fwk.vercel.app",
 		},
-	},
+		{
+			title: "tsconfig",
+			description: "A typescript configuration that you can copy and paste into your projects.",
+			href: "https://tscfg.vercel.app",
+		},
+	],
 } as const;
 
 export type SiteConfig = typeof siteConfig;

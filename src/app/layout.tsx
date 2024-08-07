@@ -4,7 +4,6 @@ import { inter, jetBrainsMono } from "~/lib/fonts";
 import { siteConfig } from "~/config/site";
 import { cn } from "~/lib/utils";
 import { Navbar } from "~/components/Navbar";
-import { Footer } from "~/components/Footer";
 
 import "../styles/globals.css";
 
@@ -35,15 +34,14 @@ export default function RootLayout({ children }: { readonly children: React.Reac
 		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
-					"bg-background text-foreground antialiased selection:bg-sky-500 selection:text-white",
+					"bg-neutral-900 text-neutral-200 antialiased selection:bg-blue-400 selection:text-white",
 					inter.variable,
 					jetBrainsMono.variable,
 				)}
 			>
-				<div className="mx-auto max-w-6xl min-h-screen flex flex-col">
+				<div className="mx-auto max-w-2xl min-h-screen flex flex-col">
 					<Navbar />
 					{children}
-					<Footer />
 				</div>
 			</body>
 		</html>
