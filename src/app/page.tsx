@@ -12,9 +12,11 @@ export default function IndexPage() {
 				<div className="flex flex-col space-y-3">
 					<h1 className="text-2xl font-bold tracking-tighter">hey, I&apos;m john 👋</h1>
 					<p className="max-w-screen-md font-light">
-						I&apos;m 23 year old <strong>frontend developer</strong> and <strong>optimist</strong>. I like playing
-						guitar and listening to music. I enjoy <strong>language design</strong> and <strong>web development</strong>
-						. If I&apos;m not coding, I&apos;m probably watching anime or working out.
+						I&apos;m 23 year old <strong className="font-bold">frontend developer</strong> and{" "}
+						<strong className="font-bold">optimist</strong>. I like playing guitar and listening to music. I enjoy{" "}
+						<strong className="font-bold">language design</strong> and{" "}
+						<strong className="font-bold">web development</strong>. If I&apos;m not coding, I&apos;m probably watching
+						anime or working out.
 					</p>
 				</div>
 				<div className="flex flex-col space-y-3">
