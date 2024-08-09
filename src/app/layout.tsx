@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { readonly children: React.Reac
 					jetBrainsMono.variable,
 				)}
 			>
-				<div className="mx-auto max-w-3xl min-h-screen flex flex-col">
+				<div className="mx-auto max-w-2xl min-h-screen flex flex-col">
 					<Navbar />
 					{children}
 				</div>

@@ -10,7 +10,7 @@ export function Navbar() {
 	const pathname = usePathname();
 
 	return (
-		<header className="sticky top-0 z-50 w-full bg-[#111010]/95 backdrop-blur supports-[backdrop-filter]:bg-[#111010]/60">
+		<header className="mt-3 w-full">
 			<div className="container flex max-w-screen-2xl h-16 items-center">
 				<div className="flex items-center gap-4">
 					{siteConfig.navLinks.map((item) => (
