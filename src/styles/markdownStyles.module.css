@@ -14,23 +14,23 @@
 }
 
 .markdown a {
-	@apply underline underline-offset-2 font-bold text-[#5865f2] decoration-[#5865f2];
+	@apply underline underline-offset-2 font-bold text-blue-400 decoration-blue-400;
 }
 
 .markdown h1 {
-	@apply text-4xl font-bold tracking-tighter mt-12 mb-4 border-b border-neutral-700;
+	@apply text-4xl font-semibold tracking-tighter mt-12 mb-4 border-b border-neutral-700;
 }
 
 .markdown h2 {
-	@apply text-2xl font-bold tracking-tighter mt-12 mb-4 border-b border-neutral-700;
+	@apply text-2xl font-semibold tracking-tighter mt-12 mb-4 border-b border-neutral-700;
 }
 
 .markdown h3 {
-	@apply text-xl font-bold tracking-tighter mt-8 mb-4 border-b border-neutral-700;
+	@apply text-xl font-semibold tracking-tighter mt-8 mb-4 border-b border-neutral-700;
 }
 
 .markdown blockquote {
-	@apply block space-y-1 border-l-4 border-[#5865f2] p-2 bg-neutral-800 shadow-md rounded;
+	@apply block space-y-1 border-l-4 border-blue-400 px-2 py-1 bg-neutral-800 shadow-md rounded;
 }
 
 .markdown blockquote p {
@@ -43,6 +43,6 @@
 }
 
 .markdown pre code {
-	@apply block p-4 w-full border border-neutral-700 bg-neutral-800 overflow-auto rounded;
+	@apply block p-4 w-full border border-neutral-800 bg-neutral-900 overflow-auto rounded;
 	white-space: pre;
 }

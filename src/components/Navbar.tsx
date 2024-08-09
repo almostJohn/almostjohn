@@ -10,7 +10,7 @@ export function Navbar() {
 	const pathname = usePathname();
 
 	return (
-		<header className="sticky top-0 z-50 w-full bg-neutral-900/95 backdrop-blur supports-[backdrop-filter]:bg-neutral-900/60">
+		<header className="sticky top-0 z-50 w-full bg-[#111010]/95 backdrop-blur supports-[backdrop-filter]:bg-[#111010]/60">
 			<div className="container flex max-w-screen-2xl h-16 items-center">
 				<div className="flex items-center gap-4">
 					{siteConfig.navLinks.map((item) => (
@@ -18,8 +18,8 @@ export function Navbar() {
 							key={item.href}
 							href={item.href}
 							className={cn(
-								"transition-colors text-neutral-500 hover:text-neutral-200",
-								pathname === item.href ? "text-neutral-200" : "hover:text-neutral-200",
+								"transition-colors font-medium hover:text-white",
+								pathname === item.href ? "line-through" : "text-neutral-500 hover:text-white",
 							)}
 						>
 							{item.title}

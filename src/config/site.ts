@@ -24,17 +24,17 @@ export const siteConfig = {
 	projects: [
 		{
 			title: "secretposts.link",
-			description: "Express yourself freely without revealing who you are.",
+			description: "express yourself freely without revealing who you are.",
 			href: "https://secretposts-link.vercel.app",
 		},
 		{
 			title: "djs-framework",
-			description: "A framework for building discord bot the fastest way.",
+			description: "a framework for building discord bot the fastest way.",
 			href: "https://djs-fwk.vercel.app",
 		},
 		{
 			title: "tsconfig",
-			description: "A typescript configuration that you can copy and paste into your projects.",
+			description: "a typescript configuration that you can copy and paste into your projects.",
 			href: "https://tscfg.vercel.app",
 		},
 	],

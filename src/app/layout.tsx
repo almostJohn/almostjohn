@@ -34,12 +34,12 @@ export default function RootLayout({ children }: { readonly children: React.Reac
 		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
-					"bg-neutral-900 text-neutral-200 antialiased selection:bg-blue-400 selection:text-white",
+					"bg-[#111010] text-white antialiased selection:bg-blue-400 selection:text-white",
 					inter.variable,
 					jetBrainsMono.variable,
 				)}
 			>
-				<div className="mx-auto max-w-2xl min-h-screen flex flex-col">
+				<div className="mx-auto max-w-3xl min-h-screen flex flex-col">
 					<Navbar />
 					{children}
 				</div>

@@ -8,11 +8,11 @@ type ProjectContainerProps = {
 
 export function ProjectContainer({ href, title, description }: ProjectContainerProps) {
 	return (
-		<a href={href} className="group flex flex-col space-y-1.5">
-			<h1 className="font-bold underline underline-offset-4 decoration-neutral-500 group-hover:decoration-neutral-200">
+		<a href={href} className="group flex flex-col space-y-2">
+			<h1 className="font-medium underline underline-offset-4 decoration-neutral-500 group-hover:decoration-white">
 				{title}
 			</h1>
-			<p className="text-sm text-neutral-500">{description}</p>
+			<p className="max-w-sm font-light">{description}</p>
 		</a>
 	);
 }
