@@ -23,11 +23,6 @@ export const siteConfig = {
 	],
 	projects: [
 		{
-			title: "secretposts.link",
-			description: "express yourself freely without revealing who you are.",
-			href: "https://secretposts-link.vercel.app",
-		},
-		{
 			title: "djs-framework",
 			description: "a framework for building discord bot the fastest way.",
 			href: "https://djs-fwk.vercel.app",
