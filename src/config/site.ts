@@ -23,6 +23,12 @@ export const siteConfig = {
 	],
 	projects: [
 		{
+			title: "secretfiles",
+			description:
+				"SecretFiles is your anonymous archive. Share your secrets, stories, and confessions without fear of exposure.",
+			href: "https://secretfiles-beta.vercel.app",
+		},
+		{
 			title: "djs-framework",
 			description: "a framework for building discord bot the fastest way.",
 			href: "https://djs-fwk.vercel.app",
