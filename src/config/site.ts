@@ -25,7 +25,7 @@ export const siteConfig = {
 		{
 			title: "secretfiles",
 			description:
-				"SecretFiles is your anonymous archive. Share your secrets, stories, and confessions without fear of exposure.",
+				"secretfiles is your anonymous archive. share your secrets, stories, and confessions without fear of exposure.",
 			href: "https://secretfiles-beta.vercel.app",
 		},
 		{
