@@ -1,19 +1,16 @@
-import * as React from "react";
+import Link from "next/link";
 
 type Props = {
 	title: string;
-	date: string;
-	readTime: string;
 };
 
-export function PostHeader({ title, date, readTime }: Props) {
+export function PostHeader({ title }: Props) {
 	return (
-		<div className="pt-6 flex flex-col space-y-2">
-			<h1 className="text-2xl font-bold tracking-tighter">{title}</h1>
-			<div className="flex items-center justify-between">
-				<span className="text-sm font-medium">{date}</span>
-				<span className="text-sm text-muted-foreground">({readTime})</span>
-			</div>
+		<div className="flex flex-col pt-12">
+			<h1 className="font-medium fade-in">{title}</h1>
+			<Link href="/" className="font-medium text-gray-400 fade-in">
+				Jhan Gale Garcia
+			</Link>
 		</div>
 	);
 }

@@ -11,32 +11,22 @@ export const siteConfig = {
 		instagram: "https://instagram.com/almostjohn1",
 		facebook: "https://facebook.com/alsojohn01",
 	},
-	navLinks: [
-		{
-			title: "home",
-			href: "/",
-		},
-		{
-			title: "blog",
-			href: "/blog",
-		},
-	],
 	projects: [
 		{
 			title: "secretfiles",
 			description:
 				"secretfiles is your anonymous archive. share your secrets, stories, and confessions without fear of exposure.",
-			href: "https://secretfiles-beta.vercel.app",
+			href: "https://github.com/almostJohn/secretfiles",
 		},
 		{
 			title: "djs-framework",
 			description: "a framework for building discord bot the fastest way.",
-			href: "https://djs-fwk.vercel.app",
+			href: "https://github.com/almostJohn/djs-framework",
 		},
 		{
 			title: "tsconfig",
 			description: "a typescript configuration that you can copy and paste into your projects.",
-			href: "https://tscfg.vercel.app",
+			href: "https://github.com/almostJohn/tsconfig",
 		},
 	],
 } as const;

@@ -32,7 +32,7 @@ export default async function PostPage({ params }: Params) {
 			<div className="container">
 				<article className="flex-1 pb-16">
 					<div className="flex flex-col">
-						<PostHeader title={post.title} date={post.date} readTime={post.readTime!} />
+						<PostHeader title={post.title} />
 						<PostBody content={content} />
 					</div>
 				</article>

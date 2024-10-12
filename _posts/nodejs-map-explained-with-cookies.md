@@ -4,7 +4,7 @@ date: "June 29, 2024"
 readTime: "30min read"
 ---
 
-## Intro
+## Introduction
 
 I keep seeing people having issues with understanding **Node.js** [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) class.
 
