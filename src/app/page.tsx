@@ -21,7 +21,7 @@ export default function IndexPage() {
 					<Blogs />
 				</div>
 				<div className="space-y-4">
-					<h3 className="font-medium">Codes</h3>
+					<h3 className="font-medium">Code</h3>
 					<Projects />
 				</div>
 			</div>

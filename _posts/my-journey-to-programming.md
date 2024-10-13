@@ -4,11 +4,15 @@ date: "March 24, 2024"
 readTime: "5min read"
 ---
 
-## Intro
+## Introduction
 
 Several years ago, my journey into the world of programming began with a simple desire; to create a Discord bot. Little did I know that this decision would open the doors to a world of endless possibilities and opportunities for learning. With JavaScript as my starting point, I embarked on a journey filled with challenges, triumphs, and ultimately, the discovery of a programming language that would become my go-to tool in the realm of software development; TypeScript.
 
 This post will be a collection of my experience based on how I discover my first programming language and how I embrace it as my journey continues.
+
+```js
+console.log("Hello, World!");
+```
 
 ## How I discovered JavaScript?
 
