@@ -13,9 +13,9 @@ export const siteConfig = {
 	},
 	projects: [
 		{
-			title: "secretfiles",
+			title: "secretthreads",
 			description:
-				"secretfiles is your anonymous archive. share your secrets, stories, and confessions without fear of exposure.",
+				"secretthreads is your anonymous archive. share your secrets, stories, and confessions without fear of exposure.",
 			href: "https://github.com/almostJohn/secretfiles",
 		},
 		{
