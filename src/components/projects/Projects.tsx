@@ -3,8 +3,8 @@ import { siteConfig } from "~/config/site";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "~/components/ui/hover-card";
 
 export function Projects() {
-	const otherProjects = siteConfig.projects.filter((item) => item.title !== "secretfiles");
-	const secretFiles = siteConfig.projects.find((item) => item.title === "secretfiles");
+	const otherProjects = siteConfig.projects.filter((item) => item.title !== "secretthreads");
+	const secretFiles = siteConfig.projects.find((item) => item.title === "secretthreads");
 
 	return (
 		<div className="flex flex-col space-y-3">
